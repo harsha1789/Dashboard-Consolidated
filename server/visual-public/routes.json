@@ -1,0 +1,14 @@
+{
+  "test.com": [
+    "/",
+    "/about"
+  ],
+  "www.claudecowork.pro": [
+    "/",
+    "/blog/how-to-use-claude-cowork"
+  ],
+  "www.betway.mw": [
+    "/",
+    "/sport/soccer?account=my-bets"
+  ]
+}

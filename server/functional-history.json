@@ -1,0 +1,720 @@
+{
+  "history": [
+    {
+      "runId": "1770117493629",
+      "timestamp": "2026-02-03T11:18:44.581Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "login",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Login - Standard User Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Login - Invalid Credentials Error",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1770113969018",
+      "timestamp": "2026-02-03T10:19:49.009Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769760423950",
+      "timestamp": "2026-01-30T08:07:21.007Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "login",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Login - Standard User Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Login - Invalid Credentials Error",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769760370830",
+      "timestamp": "2026-01-30T08:06:28.815Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "login",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Login - Standard User Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Login - Invalid Credentials Error",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769752962778",
+      "timestamp": "2026-01-30T06:03:02.099Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "login",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Login - Standard User Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Login - Invalid Credentials Error",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ],
+      "clientId": "amazon"
+    },
+    {
+      "runId": "1769750013424",
+      "timestamp": "2026-01-30T05:13:48.993Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "login",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Login - Standard User Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Login - Invalid Credentials Error",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ],
+      "clientId": "amazon"
+    },
+    {
+      "runId": "1769749985436",
+      "timestamp": "2026-01-30T05:13:25.075Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "amazon"
+    },
+    {
+      "runId": "1769178495774",
+      "timestamp": "2026-01-23T14:28:40.742Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "signup"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "signup",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 2,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Sign Up - New Account Creation Flow",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Sign Up - Form Validation",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 2,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "signup"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769175796666",
+      "timestamp": "2026-01-23T13:43:34.858Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769174940506",
+      "timestamp": "2026-01-23T13:29:17.755Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "regression",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769174878012",
+      "timestamp": "2026-01-23T13:28:29.989Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "regression",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1769170857377",
+      "timestamp": "2026-01-23T12:22:05.530Z",
+      "status": "Passed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ],
+      "clientId": "default"
+    },
+    {
+      "runId": "1768988708020",
+      "timestamp": "2026-01-21T09:45:26.699Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ]
+    },
+    {
+      "runId": "1768836595687",
+      "timestamp": "2026-01-19T15:30:15.968Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [
+        {
+          "scriptName": "betslip",
+          "passed": 0,
+          "failed": 0,
+          "totalTests": 3,
+          "duration": 0,
+          "testCases": [
+            {
+              "title": "Betslip - Single Bet Placement",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Multiple Selections",
+              "status": "unknown",
+              "duration": 0
+            },
+            {
+              "title": "Betslip - Clear Selections",
+              "status": "unknown",
+              "duration": 0
+            }
+          ]
+        }
+      ],
+      "totalTests": 3,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ]
+    },
+    {
+      "runId": "1768828016237",
+      "timestamp": "2026-01-19T13:07:02.761Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [],
+      "totalTests": 0,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ]
+    },
+    {
+      "runId": "1768827907179",
+      "timestamp": "2026-01-19T13:05:14.050Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip",
+          "login",
+          "signup"
+        ]
+      },
+      "perScriptResults": [],
+      "totalTests": 0,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip",
+        "login",
+        "signup"
+      ]
+    },
+    {
+      "runId": "1768827860972",
+      "timestamp": "2026-01-19T13:04:27.865Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [],
+      "totalTests": 0,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ]
+    },
+    {
+      "runId": "1768827471262",
+      "timestamp": "2026-01-19T12:57:59.462Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "login"
+        ]
+      },
+      "perScriptResults": [],
+      "totalTests": 0,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "login"
+      ]
+    },
+    {
+      "runId": "1768667987126",
+      "timestamp": "2026-01-17T16:40:09.338Z",
+      "status": "Failed",
+      "config": {
+        "region": "ZA",
+        "suiteType": "smoke",
+        "scripts": [
+          "betslip"
+        ]
+      },
+      "perScriptResults": [],
+      "totalTests": 0,
+      "totalPassed": 0,
+      "totalFailed": 0,
+      "region": "ZA",
+      "scripts": [
+        "betslip"
+      ]
+    }
+  ]
+}

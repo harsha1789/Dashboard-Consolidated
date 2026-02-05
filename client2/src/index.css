@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Scale down base size to approx 85% (13.6px) for normal laptop screens */
+  font-size: 13.5px;
+}
+
+@media (min-width: 1536px) {
+  :root {
+    /* Restore to 16px for very large screens (2k/4k) */
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #e8e8f0;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b7cf7 0%, #a78bfa 100%);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a78bfa 0%, #c4b5fd 100%);
+}
+
+/* Animations */
+@keyframes blob {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.15) 50%, transparent 100%);
+  background-size: 1000px 100%;
+}
+
+::selection {
+  background-color: rgba(139, 124, 247, 0.3);
+  color: #fff;
+}
+
+/* Soothing Theme Color Variables */
+:root {
+  --primary: #8b7cf7;
+  --primary-light: #a78bfa;
+  --primary-dark: #7c3aed;
+  --secondary: #6366f1;
+  --accent: #818cf8;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --error: #f87171;
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16162a;
+  --text-primary: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --border: rgba(139, 124, 247, 0.15);
+}

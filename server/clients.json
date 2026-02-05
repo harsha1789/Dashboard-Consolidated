@@ -1,0 +1,55 @@
+{
+  "activeClient": "default",
+  "clients": [
+    {
+      "id": "default",
+      "name": "Default Project",
+      "baseUrl": "",
+      "description": "Default project for testing",
+      "createdAt": "2026-01-23T07:23:01.472Z",
+      "environments": {
+        "dev": "",
+        "staging": "",
+        "prod": ""
+      }
+    },
+    {
+      "id": "amazon",
+      "name": "Client 2",
+      "baseUrl": "https://www.amazon.in/",
+      "description": "Online shopping website ",
+      "createdAt": "2026-01-23T14:22:04.753Z",
+      "environments": {
+        "dev": "",
+        "staging": "",
+        "prod": "https://www.amazon.in/"
+      },
+      "updatedAt": "2026-01-23T14:22:29.425Z"
+    },
+    {
+      "id": "client-3",
+      "name": "Client 3",
+      "baseUrl": "https://rpgnet.sharepoint.com/sites/OneRPG",
+      "description": "",
+      "createdAt": "2026-01-23T14:23:06.562Z",
+      "environments": {
+        "dev": "",
+        "staging": "",
+        "prod": "https://rpgnet.sharepoint.com/sites/OneRPG"
+      }
+    },
+    {
+      "id": "client-4",
+      "name": "Client 4",
+      "baseUrl": "https://github.com/betway-don/JPC-Automation",
+      "description": "",
+      "createdAt": "2026-01-23T14:23:22.996Z",
+      "environments": {
+        "dev": "",
+        "staging": "",
+        "prod": "https://github.com/betway-don/JPC-Automation"
+      },
+      "updatedAt": "2026-01-23T14:23:42.034Z"
+    }
+  ]
+}

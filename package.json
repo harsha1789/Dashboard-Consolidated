@@ -1,0 +1,31 @@
+{
+  "name": "automation-hub",
+  "version": "2.0.0",
+  "description": "Automation Hub - Playwright Dashboard with Visual, Functional, Security & Load Testing",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client2 && npm install && npm run build",
+    "dev": "concurrently \"cd server && node server.js\" \"cd client2 && npm run dev\"",
+    "install:all": "npm install && cd client2 && npm install && cd ../server && npm install",
+    "postinstall": "cd client2 && npm install && npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "automation",
+    "playwright",
+    "testing",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "typescript": "^5.9.3"
+  }
+}

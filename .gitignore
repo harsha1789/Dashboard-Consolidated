@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build output (will be built on deployment)
+client2/dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test results
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Visual testing files (large)
+server/visual-public/screenshots/
+server/visual-public/baselines/
+server/visual-public/diffs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Claude
+.claude/
+
+# Windows reserved names
+nul

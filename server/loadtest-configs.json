@@ -1,0 +1,132 @@
+{
+  "configs": [
+    {
+      "id": "1769809364104",
+      "clientId": "default",
+      "name": "Wealth Inn - Complete Load Test",
+      "provider": "Habanero",
+      "targetUrl": "https://gs-betway.insvr.com",
+      "selectedApis": [
+        {
+          "id": 1,
+          "method": "POST",
+          "endpoint": "/ps?client=1.1.18662.970",
+          "fullUrl": "https://gs-betway.insvr.com/ps?client=1.1.18662.970",
+          "category": "Game Engine - Spin/Bet",
+          "description": "POST spin/bet request - Wealth Inn (R1.60/spin, 8 lines, base mode)",
+          "params": [
+            {
+              "name": "client",
+              "value": "1.1.18662.970"
+            }
+          ],
+          "body": {
+            "game": {
+              "action": "game",
+              "sessionid": "1d7436fd-3e51-4bb9-8683-2a9a6b814dd2",
+              "brandgameid": "16432539-69d8-44f9-b48a-791ef9380952",
+              "kn": "SGWealthInn"
+            },
+            "portmessage": "{\"coinValue\":0.2,\"betLevel\":1,\"numLines\":8,\"gameMode\":\"base\",\"pssid\":\"\"}",
+            "header": {
+              "player": {
+                "ssotoken": "ps-80875b81105504a541148c45a79e1003698071yvakcxo",
+                "funmode": false,
+                "brandid": "66f160ed-7697-eb11-b566-501ac5016c00",
+                "lc": "en",
+                "mobile": false
+              },
+              "version": "1.1.18662.970"
+            },
+            "grid": "a2940c9a-ca4d-4e00-a231-70131c951bb9"
+          }
+        },
+        {
+          "id": 2,
+          "method": "GET",
+          "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+          "fullUrl": "https://casinoapi.betwayafrica.com/api/v3/Gaming/Game/wealth-inn/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+          "category": "Game Launch",
+          "description": "GET Wealth Inn game details and launch parameters (brandgameid, buildertype)",
+          "params": [
+            { "name": "regionCode", "value": "ZA" },
+            { "name": "channel", "value": "WebDesktop" },
+            { "name": "vertical", "value": "casino-games" },
+            { "name": "languageCode", "value": "en-US" },
+            { "name": "currency", "value": "ZAR" },
+            { "name": "version", "value": "0" },
+            { "name": "environment", "value": "Production" }
+          ]
+        }
+      ],
+      "loadConfig": {
+        "virtualUsers": 10,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Wealth Inn - Complete Load Test"
+      },
+      "customHeaders": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Origin",
+          "value": "https://app-betway.insvr.com"
+        },
+        {
+          "key": "Referer",
+          "value": "https://app-betway.insvr.com/"
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer YOUR_TOKEN_HERE"
+        }
+      ],
+      "createdAt": "2026-01-30T21:42:44.104Z",
+      "updatedAt": "2026-01-31T10:00:00.000Z"
+    },
+    {
+      "id": "1769805952540",
+      "clientId": "default",
+      "name": "Betway Casino Games Config",
+      "provider": "Betway",
+      "targetUrl": "https://casinoapic.betwayafrica.com",
+      "selectedApis": [
+        {
+          "id": 1,
+          "method": "GET",
+          "endpoint": "/api/v4/Gaming/Game/Categories",
+          "fullUrl": "https://casinoapic.betwayafrica.com/api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0",
+          "category": "Gaming",
+          "params": [
+            { "name": "channel", "value": "WebDesktop" },
+            { "name": "count", "value": "16" },
+            { "name": "gameCount", "value": "16" },
+            { "name": "languageCode", "value": "en-US" },
+            { "name": "currency", "value": "ZAR" },
+            { "name": "environment", "value": "Production" },
+            { "name": "regionCode", "value": "ZA" },
+            { "name": "vertical", "value": "casino-games" },
+            { "name": "appVersion", "value": "0" }
+          ],
+          "description": "GET /api/v4/Gaming/Game/Categories - Lists all games under each provider"
+        }
+      ],
+      "loadConfig": {
+        "virtualUsers": 50,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Betway Casino Games Config"
+      },
+      "customHeaders": [
+        {
+          "key": "Authorization",
+          "value": "Bearer YOUR_TOKEN_HERE"
+        }
+      ],
+      "createdAt": "2026-01-30T20:45:52.540Z",
+      "updatedAt": "2026-01-30T20:45:52.540Z"
+    }
+  ]
+}

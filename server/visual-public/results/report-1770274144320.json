@@ -1,0 +1,213 @@
+{
+  "id": "1770274144320",
+  "url": "https://www.amazon.in/",
+  "site": "www.amazon.in",
+  "timestamp": "2026-02-05T06:53:17.292Z",
+  "duration": "252.97s",
+  "results": [
+    {
+      "route": "/",
+      "viewports": [
+        {
+          "viewport": "Desktop",
+          "width": 1920,
+          "height": 1080,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-desktop-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines/www.amazon.in/home-desktop-fullpage.png",
+            "current": "runs/1770274144320/home-desktop-fullpage.png",
+            "diffPixels": -1,
+            "totalPixels": 0,
+            "matchingPixels": 0,
+            "accuracy": "0.00",
+            "diff": "runs/1770274144320/home-desktop-fullpage-diff.png"
+          },
+          "components": [
+            {
+              "name": "Header",
+              "filename": "home-header.png",
+              "status": "fail",
+              "baseline": "baselines/www.amazon.in/home-header.png",
+              "current": "runs/1770274144320/home-header.png",
+              "diffPixels": 24083,
+              "totalPixels": 190080,
+              "matchingPixels": 165997,
+              "accuracy": "87.33",
+              "diff": "runs/1770274144320/home-header-diff.png"
+            },
+            {
+              "name": "Navigation",
+              "filename": "home-navigation.png",
+              "status": "fail",
+              "baseline": "baselines/www.amazon.in/home-navigation.png",
+              "current": "runs/1770274144320/home-navigation.png",
+              "diffPixels": 60554,
+              "totalPixels": 184800,
+              "matchingPixels": 124246,
+              "accuracy": "67.23",
+              "diff": "runs/1770274144320/home-navigation-diff.png"
+            },
+            {
+              "name": "Hero Section",
+              "filename": "home-hero-section.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-hero-section.png",
+              "current": "runs/1770274144320/home-hero-section.png",
+              "diffPixels": 0,
+              "totalPixels": 345000,
+              "matchingPixels": 345000,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-hero-section-diff.png"
+            },
+            {
+              "name": "Primary Form",
+              "filename": "home-primary-form.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-primary-form.png",
+              "current": "runs/1770274144320/home-primary-form.png",
+              "diffPixels": 0,
+              "totalPixels": 45120,
+              "matchingPixels": 45120,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-primary-form-diff.png"
+            },
+            {
+              "name": "Input Field 1",
+              "filename": "home-input-field-1.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-input-field-1.png",
+              "current": "runs/1770274144320/home-input-field-1.png",
+              "diffPixels": 0,
+              "totalPixels": 39178,
+              "matchingPixels": 39178,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-input-field-1-diff.png"
+            },
+            {
+              "name": "Button 1",
+              "filename": "home-button-1.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-button-1.png",
+              "current": "runs/1770274144320/home-button-1.png",
+              "diffPixels": 0,
+              "totalPixels": 13817,
+              "matchingPixels": 13817,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-button-1-diff.png"
+            },
+            {
+              "name": "Button 2",
+              "filename": "home-button-2.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-button-2.png",
+              "current": "runs/1770274144320/home-button-2.png",
+              "diffPixels": 0,
+              "totalPixels": 13817,
+              "matchingPixels": 13817,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-button-2-diff.png"
+            },
+            {
+              "name": "Button 3",
+              "filename": "home-button-3.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-button-3.png",
+              "current": "runs/1770274144320/home-button-3.png",
+              "diffPixels": 0,
+              "totalPixels": 13817,
+              "matchingPixels": 13817,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-button-3-diff.png"
+            },
+            {
+              "name": "Button 4",
+              "filename": "home-button-4.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-button-4.png",
+              "current": "runs/1770274144320/home-button-4.png",
+              "diffPixels": 0,
+              "totalPixels": 13817,
+              "matchingPixels": 13817,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-button-4-diff.png"
+            },
+            {
+              "name": "Button 5",
+              "filename": "home-button-5.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-button-5.png",
+              "current": "runs/1770274144320/home-button-5.png",
+              "diffPixels": 0,
+              "totalPixels": 13817,
+              "matchingPixels": 13817,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-button-5-diff.png"
+            },
+            {
+              "name": "Dropdown 1",
+              "filename": "home-dropdown-1.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-dropdown-1.png",
+              "current": "runs/1770274144320/home-dropdown-1.png",
+              "diffPixels": 0,
+              "totalPixels": 6984,
+              "matchingPixels": 6984,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-dropdown-1-diff.png"
+            },
+            {
+              "name": "Card Component",
+              "filename": "home-card-component.png",
+              "status": "pass",
+              "baseline": "baselines/www.amazon.in/home-card-component.png",
+              "current": "runs/1770274144320/home-card-component.png",
+              "diffPixels": 0,
+              "totalPixels": 4675,
+              "matchingPixels": 4675,
+              "accuracy": "100.00",
+              "diff": "runs/1770274144320/home-card-component-diff.png"
+            }
+          ]
+        },
+        {
+          "viewport": "Tablet",
+          "width": 768,
+          "height": 1024,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-tablet-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines/www.amazon.in/home-tablet-fullpage.png",
+            "current": "runs/1770274144320/home-tablet-fullpage.png",
+            "diffPixels": -1,
+            "totalPixels": 0,
+            "matchingPixels": 0,
+            "accuracy": "0.00",
+            "diff": "runs/1770274144320/home-tablet-fullpage-diff.png"
+          },
+          "components": []
+        },
+        {
+          "viewport": "Mobile",
+          "width": 375,
+          "height": 667,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-mobile-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines/www.amazon.in/home-mobile-fullpage.png",
+            "current": "runs/1770274144320/home-mobile-fullpage.png",
+            "diffPixels": -1,
+            "totalPixels": 0,
+            "matchingPixels": 0,
+            "accuracy": "0.00",
+            "diff": "runs/1770274144320/home-mobile-fullpage-diff.png"
+          },
+          "components": []
+        }
+      ]
+    }
+  ]
+}

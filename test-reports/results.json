@@ -1,0 +1,2198 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\HT67091\\Downloads\\Automation-Dashboard-main\\playwright.config.ts",
+    "rootDir": "C:/Users/HT67091/Downloads/Automation-Dashboard-main/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "test-reports/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-reports/results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/HT67091/Downloads/Automation-Dashboard-main/test-reports/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/HT67091/Downloads/Automation-Dashboard-main/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node server/server.js",
+      "port": 3000,
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "01-login.spec.ts",
+      "file": "01-login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page",
+          "file": "01-login.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC001 - Login page should display correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-f64de06be1783211973e",
+              "file": "01-login.spec.ts",
+              "line": 11,
+              "column": 9
+            },
+            {
+              "title": "TC002 - Role selection dropdown should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-993eacd7676c318fd5e6",
+              "file": "01-login.spec.ts",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": "TC003 - Login should fail without selecting role",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-3f5f4faf7fd37986f1ea",
+              "file": "01-login.spec.ts",
+              "line": 52,
+              "column": 9
+            },
+            {
+              "title": "TC004 - Login should fail without password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-7cc2a3edbea30b9c6ce8",
+              "file": "01-login.spec.ts",
+              "line": 63,
+              "column": 9
+            },
+            {
+              "title": "TC005 - Login should fail with invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-19e9061d1898c197f986",
+              "file": "01-login.spec.ts",
+              "line": 77,
+              "column": 9
+            },
+            {
+              "title": "TC006 - Login should succeed with valid credentials - Developer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-eca5ffc81bce8f9b2122",
+              "file": "01-login.spec.ts",
+              "line": 92,
+              "column": 9
+            },
+            {
+              "title": "TC007 - Login should succeed with valid credentials - QA Engineer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-094658895e84536f9087",
+              "file": "01-login.spec.ts",
+              "line": 108,
+              "column": 9
+            },
+            {
+              "title": "TC008 - Login should succeed with valid credentials - End User",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-dfbd8d75ab3b719d029a",
+              "file": "01-login.spec.ts",
+              "line": 123,
+              "column": 9
+            },
+            {
+              "title": "TC009 - Role selection via bottom cards should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-f4bcb3071877f225a5b6",
+              "file": "01-login.spec.ts",
+              "line": 138,
+              "column": 9
+            },
+            {
+              "title": "TC010 - Session should persist after page refresh",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "29ac412fd126331721f5-f38e6e248866ba67deca",
+              "file": "01-login.spec.ts",
+              "line": 148,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "02-dashboard.spec.ts",
+      "file": "02-dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Dashboard Page",
+          "file": "02-dashboard.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC011 - Dashboard should display all navigation tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-af224b1dc60e034dac9d",
+              "file": "02-dashboard.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC012 - Dashboard should display test summary cards",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-ceee39ab79abdb87c8e6",
+              "file": "02-dashboard.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "TC013 - Dashboard should display quick stats",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-3595710beb120f242333",
+              "file": "02-dashboard.spec.ts",
+              "line": 42,
+              "column": 9
+            },
+            {
+              "title": "TC014 - Dashboard should display recent activity section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-31906c2df58fa70d9899",
+              "file": "02-dashboard.spec.ts",
+              "line": 50,
+              "column": 9
+            },
+            {
+              "title": "TC015 - Sidebar status indicator should show Idle when not running",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-4ab82175e8261803538b",
+              "file": "02-dashboard.spec.ts",
+              "line": 54,
+              "column": 9
+            },
+            {
+              "title": "TC016 - User info should display in sidebar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-53c7f651dcc98b15f173",
+              "file": "02-dashboard.spec.ts",
+              "line": 59,
+              "column": 9
+            },
+            {
+              "title": "TC017 - Sign Out button should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-ee1d2d90bd75ede28bf2",
+              "file": "02-dashboard.spec.ts",
+              "line": 64,
+              "column": 9
+            },
+            {
+              "title": "TC018 - Sign Out should redirect to login page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-1a150d265fdb8c6e4c49",
+              "file": "02-dashboard.spec.ts",
+              "line": 68,
+              "column": 9
+            },
+            {
+              "title": "TC019 - Navigation to Statistics should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-51a42df0dbc7c0fa49e7",
+              "file": "02-dashboard.spec.ts",
+              "line": 75,
+              "column": 9
+            },
+            {
+              "title": "TC020 - Navigation to History should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-9208f80475f2f8a8063c",
+              "file": "02-dashboard.spec.ts",
+              "line": 80,
+              "column": 9
+            },
+            {
+              "title": "TC021 - Navigation to Reports should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4d2f27bfb2b30c5eaf6b-20a83f89aade9f3eefad",
+              "file": "02-dashboard.spec.ts",
+              "line": 85,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-visual-testing.spec.ts",
+      "file": "03-visual-testing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Testing Tab",
+          "file": "03-visual-testing.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC022 - Visual Testing tab should load correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-7e0b7252cd73be85453d",
+              "file": "03-visual-testing.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC023 - Visual Testing should display sub-tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-bb66982ac05272966b0c",
+              "file": "03-visual-testing.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC024 - New Test form should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-b169f451a8a9a1da110e",
+              "file": "03-visual-testing.spec.ts",
+              "line": 33,
+              "column": 9
+            },
+            {
+              "title": "TC025 - New Test should require test name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-1d47802ff69f03535a63",
+              "file": "03-visual-testing.spec.ts",
+              "line": 41,
+              "column": 9
+            },
+            {
+              "title": "TC026 - Reports sub-tab should display report list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-4b3a6021abfe6e0946da",
+              "file": "03-visual-testing.spec.ts",
+              "line": 52,
+              "column": 9
+            },
+            {
+              "title": "TC027 - Baselines sub-tab should display baseline manager",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-3b9f94605ffb596bf200",
+              "file": "03-visual-testing.spec.ts",
+              "line": 58,
+              "column": 9
+            },
+            {
+              "title": "TC028 - URL input should accept valid URLs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-797a183ab1db52b9f9c5",
+              "file": "03-visual-testing.spec.ts",
+              "line": 63,
+              "column": 9
+            },
+            {
+              "title": "TC029 - Viewport options should be selectable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-5de186c1d0e1ed1cd772",
+              "file": "03-visual-testing.spec.ts",
+              "line": 73,
+              "column": 9
+            },
+            {
+              "title": "TC030 - Browser options should be available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "164fea42f0d0d89a81a5-73d5c6d04b903fc4a2e2",
+              "file": "03-visual-testing.spec.ts",
+              "line": 83,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "04-functional-testing.spec.ts",
+      "file": "04-functional-testing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Functional Testing Tab",
+          "file": "04-functional-testing.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC031 - Functional Testing tab should load correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-293cd8adf7752f64d2a7",
+              "file": "04-functional-testing.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC032 - Functional Testing should display sub-tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-8f472113b89a70311738",
+              "file": "04-functional-testing.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC033 - Test Panel should display region selector",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-641004e587f6eac7d71d",
+              "file": "04-functional-testing.spec.ts",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": "TC034 - Test Panel should display suite type selector",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-0b32ea24e1ca310ad35d",
+              "file": "04-functional-testing.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "TC035 - Region options should include South Africa",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-8eaef9cc764167aca084",
+              "file": "04-functional-testing.spec.ts",
+              "line": 44,
+              "column": 9
+            },
+            {
+              "title": "TC036 - Suite type should have Smoke and Regression options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-51d9732d8f960c394b25",
+              "file": "04-functional-testing.spec.ts",
+              "line": 54,
+              "column": 9
+            },
+            {
+              "title": "TC037 - Scripts section should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-f3ed51a81fa3ce9cfca3",
+              "file": "04-functional-testing.spec.ts",
+              "line": 60,
+              "column": 9
+            },
+            {
+              "title": "TC038 - Run button should be present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-eb524f63d8ba8d29c7ff",
+              "file": "04-functional-testing.spec.ts",
+              "line": 65,
+              "column": 9
+            },
+            {
+              "title": "TC039 - Stop button should be present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-4c21a1bc2719b790839f",
+              "file": "04-functional-testing.spec.ts",
+              "line": 70,
+              "column": 9
+            },
+            {
+              "title": "TC040 - Console output section should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-3d7037a7d847287b1664",
+              "file": "04-functional-testing.spec.ts",
+              "line": 75,
+              "column": 9
+            },
+            {
+              "title": "TC041 - Statistics sub-tab should display metrics",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-e3387e625e60996daa0b",
+              "file": "04-functional-testing.spec.ts",
+              "line": 80,
+              "column": 9
+            },
+            {
+              "title": "TC042 - History sub-tab should display execution history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-db55defd05a570594c47",
+              "file": "04-functional-testing.spec.ts",
+              "line": 85,
+              "column": 9
+            },
+            {
+              "title": "TC043 - Reports sub-tab should display test reports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-73c0848a0b42e593702c",
+              "file": "04-functional-testing.spec.ts",
+              "line": 90,
+              "column": 9
+            },
+            {
+              "title": "TC044 - Select All scripts button should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-2762000b48a33ea92c0d",
+              "file": "04-functional-testing.spec.ts",
+              "line": 95,
+              "column": 9
+            },
+            {
+              "title": "TC045 - Clear All scripts button should work",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "df721686ee2b517976da-f32b8df61c5fa5daa560",
+              "file": "04-functional-testing.spec.ts",
+              "line": 104,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-security-testing.spec.ts",
+      "file": "05-security-testing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Security Testing Tab",
+          "file": "05-security-testing.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC046 - Security Testing tab should load correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-af1b10f687fc9bbc128f",
+              "file": "05-security-testing.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC047 - Security Testing should display sub-tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-8f317c35b7989a57a2e6",
+              "file": "05-security-testing.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC048 - Overview should display security score",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-a52997d0414276362124",
+              "file": "05-security-testing.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "TC049 - Overview should display vulnerability summary",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-7a5a5bf9d6f934c84f22",
+              "file": "05-security-testing.spec.ts",
+              "line": 40,
+              "column": 9
+            },
+            {
+              "title": "TC050 - Overview should display recent scans",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-12d80d9f26bc0e8d51ca",
+              "file": "05-security-testing.spec.ts",
+              "line": 48,
+              "column": 9
+            },
+            {
+              "title": "TC051 - SAST tab should display upload section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-7e274bdea883c0ea5e4d",
+              "file": "05-security-testing.spec.ts",
+              "line": 53,
+              "column": 9
+            },
+            {
+              "title": "TC052 - SAST tab should display code paste option",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-8ecb01f7d2ceb507eca4",
+              "file": "05-security-testing.spec.ts",
+              "line": 59,
+              "column": 9
+            },
+            {
+              "title": "TC053 - SAST tab should display Start Scan button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-b1dc92fafaf48734d9f8",
+              "file": "05-security-testing.spec.ts",
+              "line": 64,
+              "column": 9
+            },
+            {
+              "title": "TC054 - SAST tab should display detected vulnerabilities",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-eab26648e92489c82253",
+              "file": "05-security-testing.spec.ts",
+              "line": 69,
+              "column": 9
+            },
+            {
+              "title": "TC055 - DAST tab should display target URL input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-fff5747f648cc96b8ab9",
+              "file": "05-security-testing.spec.ts",
+              "line": 74,
+              "column": 9
+            },
+            {
+              "title": "TC056 - DAST tab should display scan type options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-792ead64a5f6cd5d2502",
+              "file": "05-security-testing.spec.ts",
+              "line": 80,
+              "column": 9
+            },
+            {
+              "title": "TC057 - DAST tab should display authenticated scan toggle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-a6f7b4511390cf91ab31",
+              "file": "05-security-testing.spec.ts",
+              "line": 87,
+              "column": 9
+            },
+            {
+              "title": "TC058 - DAST tab should display Start DAST Scan button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-87e4f3a40896c2053651",
+              "file": "05-security-testing.spec.ts",
+              "line": 92,
+              "column": 9
+            },
+            {
+              "title": "TC059 - SCA tab should display dependency upload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-0a69d936a586a6e51c63",
+              "file": "05-security-testing.spec.ts",
+              "line": 97,
+              "column": 9
+            },
+            {
+              "title": "TC060 - SCA tab should display dependencies list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-98e30bba77a7b0fea0af",
+              "file": "05-security-testing.spec.ts",
+              "line": 103,
+              "column": 9
+            },
+            {
+              "title": "TC061 - SCA tab should display vulnerability stats",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-6a2c10c6dd0445c22998",
+              "file": "05-security-testing.spec.ts",
+              "line": 108,
+              "column": 9
+            },
+            {
+              "title": "TC062 - SCA tab should display remediation section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-68d1ff551d300054da4d",
+              "file": "05-security-testing.spec.ts",
+              "line": 114,
+              "column": 9
+            },
+            {
+              "title": "TC063 - Threat Model tab should display STRIDE methodology",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-6c51578fc1b4b4b81408",
+              "file": "05-security-testing.spec.ts",
+              "line": 119,
+              "column": 9
+            },
+            {
+              "title": "TC064 - Threat Model tab should display critical assets",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-63ce5358f291b870c41b",
+              "file": "05-security-testing.spec.ts",
+              "line": 124,
+              "column": 9
+            },
+            {
+              "title": "TC065 - Threat Model tab should display risk matrix",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-80b7b84dbd82c9265662",
+              "file": "05-security-testing.spec.ts",
+              "line": 129,
+              "column": 9
+            },
+            {
+              "title": "TC066 - Quick action buttons should navigate to respective tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0ee874832efaec15662-676fc73f2e5153bdda2e",
+              "file": "05-security-testing.spec.ts",
+              "line": 134,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "06-load-testing.spec.ts",
+      "file": "06-load-testing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Load Testing Tab",
+          "file": "06-load-testing.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC067 - Load Testing tab should load correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-7904b4589ba2d3b8e248",
+              "file": "06-load-testing.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC068 - Load Testing should display sub-tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-159fb8edf98b0195fe9b",
+              "file": "06-load-testing.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC069 - API Discovery should display target URL input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-dbdda3f9b3df54e64999",
+              "file": "06-load-testing.spec.ts",
+              "line": 35,
+              "column": 9
+            },
+            {
+              "title": "TC070 - API Discovery should display discovery methods",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-93336dd19aaf2e6418b1",
+              "file": "06-load-testing.spec.ts",
+              "line": 41,
+              "column": 9
+            },
+            {
+              "title": "TC071 - Discover APIs button should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-eecf114ff90881aec6bb",
+              "file": "06-load-testing.spec.ts",
+              "line": 50,
+              "column": 9
+            },
+            {
+              "title": "TC072 - URL input should accept valid URLs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-a3bd88414427533e7610",
+              "file": "06-load-testing.spec.ts",
+              "line": 55,
+              "column": 9
+            },
+            {
+              "title": "TC073 - Configuration tab should display test settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-4f26ff9d19726152b279",
+              "file": "06-load-testing.spec.ts",
+              "line": 63,
+              "column": 9
+            },
+            {
+              "title": "TC074 - Configuration should display load parameters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-3a9138e0883a6b64fa78",
+              "file": "06-load-testing.spec.ts",
+              "line": 68,
+              "column": 9
+            },
+            {
+              "title": "TC075 - Configuration should display Virtual Users input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-83965e5f358e9b9ac44c",
+              "file": "06-load-testing.spec.ts",
+              "line": 73,
+              "column": 9
+            },
+            {
+              "title": "TC076 - Configuration should display Ramp-up Time input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-29c11c487209199e3467",
+              "file": "06-load-testing.spec.ts",
+              "line": 78,
+              "column": 9
+            },
+            {
+              "title": "TC077 - Configuration should display Test Duration input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-e88e1f1047027cb269df",
+              "file": "06-load-testing.spec.ts",
+              "line": 83,
+              "column": 9
+            },
+            {
+              "title": "TC078 - Configuration should display RPS input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-019b0927e09c1595ae40",
+              "file": "06-load-testing.spec.ts",
+              "line": 88,
+              "column": 9
+            },
+            {
+              "title": "TC079 - Configuration should display Authentication section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-31cae0b8e39b9d606b35",
+              "file": "06-load-testing.spec.ts",
+              "line": 93,
+              "column": 9
+            },
+            {
+              "title": "TC080 - Configuration should display auth type options",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-c62f52308c862112efa9",
+              "file": "06-load-testing.spec.ts",
+              "line": 98,
+              "column": 9
+            },
+            {
+              "title": "TC081 - Configuration should display Custom Headers section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-fbbf4ea17800636b4e32",
+              "file": "06-load-testing.spec.ts",
+              "line": 103,
+              "column": 9
+            },
+            {
+              "title": "TC082 - Configuration should display Advanced Settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-7d47f949001a999872f2",
+              "file": "06-load-testing.spec.ts",
+              "line": 108,
+              "column": 9
+            },
+            {
+              "title": "TC083 - Configuration should display Environment selector",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-9101db7d00307da9375f",
+              "file": "06-load-testing.spec.ts",
+              "line": 113,
+              "column": 9
+            },
+            {
+              "title": "TC084 - Configuration should display Load Testing Tool selector",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-4e632a1a15a1741b0826",
+              "file": "06-load-testing.spec.ts",
+              "line": 118,
+              "column": 9
+            },
+            {
+              "title": "TC085 - Configuration should display Schedule Test option",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-1511b0a072b1a251b703",
+              "file": "06-load-testing.spec.ts",
+              "line": 123,
+              "column": 9
+            },
+            {
+              "title": "TC086 - Results tab should display no results message initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-4f6c15137c6251de9e2d",
+              "file": "06-load-testing.spec.ts",
+              "line": 128,
+              "column": 9
+            },
+            {
+              "title": "TC087 - History tab should display test history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-af0d7c084317e67d2d46",
+              "file": "06-load-testing.spec.ts",
+              "line": 133,
+              "column": 9
+            },
+            {
+              "title": "TC088 - History tab should display saved configurations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-62ca1cb01dd6d626fd41",
+              "file": "06-load-testing.spec.ts",
+              "line": 138,
+              "column": 9
+            },
+            {
+              "title": "TC089 - Load profile preview should be visible in configuration",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-7e1a241f3c94e4f2ebfa",
+              "file": "06-load-testing.spec.ts",
+              "line": 144,
+              "column": 9
+            },
+            {
+              "title": "TC090 - API Discovery should show scan progress when scanning",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7da3227a85cb1efdea3c-19caa9f955b16aad18c1",
+              "file": "06-load-testing.spec.ts",
+              "line": 149,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "07-reports.spec.ts",
+      "file": "07-reports.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reports Page",
+          "file": "07-reports.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC091 - Reports page should load correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-348d4885515841ad7709",
+              "file": "07-reports.spec.ts",
+              "line": 23,
+              "column": 9
+            },
+            {
+              "title": "TC092 - Reports should display sub-tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-a006533dcb92f665af56",
+              "file": "07-reports.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "TC093 - Playwright tab should display report",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-63259999f5d843f4d5bb",
+              "file": "07-reports.spec.ts",
+              "line": 33,
+              "column": 9
+            },
+            {
+              "title": "TC094 - Playwright tab should have Download PDF button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-9652970cb66c7b8aa915",
+              "file": "07-reports.spec.ts",
+              "line": 38,
+              "column": 9
+            },
+            {
+              "title": "TC095 - Functional tab should display report",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-ab00968c94638e12fbd4",
+              "file": "07-reports.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "TC096 - Functional tab should have Download PDF button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-eee288a61eb0ba844019",
+              "file": "07-reports.spec.ts",
+              "line": 48,
+              "column": 9
+            },
+            {
+              "title": "TC097 - Visual tab should display visual reports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-14db96f5c357858b23d8",
+              "file": "07-reports.spec.ts",
+              "line": 53,
+              "column": 9
+            },
+            {
+              "title": "TC098 - Report iframe should be present for Playwright",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-3687c22b3463251aaaa4",
+              "file": "07-reports.spec.ts",
+              "line": 58,
+              "column": 9
+            },
+            {
+              "title": "TC099 - Report iframe should be present for Functional",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-38af42d3a7e8be4badfb",
+              "file": "07-reports.spec.ts",
+              "line": 64,
+              "column": 9
+            },
+            {
+              "title": "TC100 - Open in New Tab button should be visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "56f7e9e730d1136387af-391790d540c4968e205c",
+              "file": "07-reports.spec.ts",
+              "line": 70,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-20T09:31:35.106Z",
+    "duration": 1089.67,
+    "expected": 0,
+    "skipped": 100,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

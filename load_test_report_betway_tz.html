@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Test Report - Betway Tanzania</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e7;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            color: #a1a1aa;
+            font-size: 1.1rem;
+        }
+
+        .header .timestamp {
+            color: #71717a;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: #a78bfa;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(180deg, #8b5cf6, #a78bfa);
+            border-radius: 2px;
+        }
+
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .config-item {
+            background: rgba(139, 92, 246, 0.1);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .config-item .label {
+            color: #a1a1aa;
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
+
+        .config-item .value {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .summary-card {
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .summary-card.success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .summary-card.warning {
+            background: rgba(234, 179, 8, 0.1);
+            border: 1px solid rgba(234, 179, 8, 0.3);
+        }
+
+        .summary-card.critical {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .summary-card.neutral {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .summary-card .metric {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .summary-card.success .metric { color: #22c55e; }
+        .summary-card.warning .metric { color: #eab308; }
+        .summary-card.critical .metric { color: #ef4444; }
+        .summary-card.neutral .metric { color: #818cf8; }
+
+        .summary-card .label {
+            color: #a1a1aa;
+            font-size: 0.85rem;
+        }
+
+        .summary-card .status {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+
+        .summary-card.success .status { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+        .summary-card.warning .status { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+        .summary-card.critical .status { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.1);
+            color: #a78bfa;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .error-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+
+        .error-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .error-bar-fill.rate-limit { background: #f59e0b; }
+        .error-bar-fill.service-unavailable { background: #ef4444; }
+        .error-bar-fill.timeout { background: #8b5cf6; }
+        .error-bar-fill.server-error { background: #ec4899; }
+        .error-bar-fill.connection { background: #6366f1; }
+
+        .response-distribution {
+            margin-top: 16px;
+        }
+
+        .dist-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .dist-label {
+            width: 120px;
+            font-size: 0.9rem;
+            color: #a1a1aa;
+        }
+
+        .dist-bar {
+            flex: 1;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 16px;
+        }
+
+        .dist-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .dist-value {
+            width: 100px;
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        .timeline {
+            margin-top: 16px;
+        }
+
+        .timeline-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+        }
+
+        .timeline-minute {
+            width: 80px;
+            font-weight: 600;
+            color: #a78bfa;
+        }
+
+        .timeline-bar {
+            flex: 1;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 16px;
+        }
+
+        .timeline-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #22c55e, #4ade80);
+            border-radius: 4px;
+        }
+
+        .timeline-stats {
+            width: 280px;
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+
+        .timeline-stats span {
+            color: #a1a1aa;
+        }
+
+        .timeline-stats strong {
+            color: #fff;
+        }
+
+        .bottleneck-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-left: 4px solid;
+        }
+
+        .bottleneck-card.critical { border-left-color: #ef4444; }
+        .bottleneck-card.high { border-left-color: #f59e0b; }
+        .bottleneck-card.medium { border-left-color: #eab308; }
+
+        .bottleneck-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .bottleneck-title {
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .bottleneck-severity {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .bottleneck-severity.critical { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+        .bottleneck-severity.high { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+        .bottleneck-severity.medium { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+
+        .bottleneck-apis {
+            font-size: 0.85rem;
+            color: #a1a1aa;
+            margin-bottom: 8px;
+        }
+
+        .bottleneck-recommendation {
+            font-size: 0.9rem;
+            color: #e4e4e7;
+            padding: 8px 12px;
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 6px;
+        }
+
+        .recommendations-list {
+            list-style: none;
+        }
+
+        .recommendations-list li {
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .recommendations-list li::before {
+            content: counter(rec);
+            counter-increment: rec;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .recommendations-list {
+            counter-reset: rec;
+        }
+
+        .score-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#8b5cf6 0deg, #8b5cf6 234deg, rgba(255,255,255,0.1) 234deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: '';
+            width: 120px;
+            height: 120px;
+            background: #1a1a2e;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .score-value {
+            position: relative;
+            z-index: 1;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8b5cf6;
+        }
+
+        .score-label {
+            font-size: 1.2rem;
+            color: #a1a1aa;
+            margin-bottom: 8px;
+        }
+
+        .score-description {
+            color: #71717a;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #71717a;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin-top: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge.get { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+        .badge.post { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+        .badge.put { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+        .badge.delete { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+        @media print {
+            body {
+                background: white;
+                color: #1a1a2e;
+            }
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Load Test Report</h1>
+            <p class="subtitle">Betway Tanzania - mobi.betway.co.tz</p>
+            <p class="timestamp">Generated: January 22, 2026 at 11:00 AM EAT</p>
+        </div>
+
+        <!-- Test Configuration -->
+        <div class="section">
+            <h2>Test Configuration</h2>
+            <div class="config-grid">
+                <div class="config-item">
+                    <div class="label">Target URL</div>
+                    <div class="value" style="font-size: 1rem;">mobi.betway.co.tz</div>
+                </div>
+                <div class="config-item">
+                    <div class="label">Virtual Users</div>
+                    <div class="value">4,000</div>
+                </div>
+                <div class="config-item">
+                    <div class="label">Request Rate</div>
+                    <div class="value">67/sec</div>
+                </div>
+                <div class="config-item">
+                    <div class="label">Test Duration</div>
+                    <div class="value">5 min</div>
+                </div>
+                <div class="config-item">
+                    <div class="label">Total Requests</div>
+                    <div class="value">1.19M</div>
+                </div>
+                <div class="config-item">
+                    <div class="label">APIs Tested</div>
+                    <div class="value">29</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-card success">
+                    <div class="metric">1,068,689</div>
+                    <div class="label">Successful Requests</div>
+                    <div class="status">90.0% PASS</div>
+                </div>
+                <div class="summary-card critical">
+                    <div class="metric">118,743</div>
+                    <div class="label">Failed Requests</div>
+                    <div class="status">10.0% FAIL</div>
+                </div>
+                <div class="summary-card warning">
+                    <div class="metric">487ms</div>
+                    <div class="label">Avg Response Time</div>
+                    <div class="status">WARNING</div>
+                </div>
+                <div class="summary-card critical">
+                    <div class="metric">2,847ms</div>
+                    <div class="label">P95 Response Time</div>
+                    <div class="status">CRITICAL</div>
+                </div>
+                <div class="summary-card neutral">
+                    <div class="metric">3,958</div>
+                    <div class="label">Throughput (req/sec)</div>
+                </div>
+                <div class="summary-card neutral">
+                    <div class="metric">4,312</div>
+                    <div class="label">Peak Throughput</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Response Time Distribution -->
+        <div class="section">
+            <h2>Response Time Distribution</h2>
+            <div class="response-distribution">
+                <div class="dist-row">
+                    <div class="dist-label">&lt; 200ms</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 24%;">24%</div>
+                    </div>
+                    <div class="dist-value">285,584 req</div>
+                </div>
+                <div class="dist-row">
+                    <div class="dist-label">200ms - 500ms</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 32.1%;">32.1%</div>
+                    </div>
+                    <div class="dist-value">380,778 req</div>
+                </div>
+                <div class="dist-row">
+                    <div class="dist-label">500ms - 1000ms</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 22%;">22%</div>
+                    </div>
+                    <div class="dist-value">261,235 req</div>
+                </div>
+                <div class="dist-row">
+                    <div class="dist-label">1s - 2s</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 12%;">12%</div>
+                    </div>
+                    <div class="dist-value">142,492 req</div>
+                </div>
+                <div class="dist-row">
+                    <div class="dist-label">2s - 5s</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 7%; background: linear-gradient(90deg, #f59e0b, #fbbf24);">7%</div>
+                    </div>
+                    <div class="dist-value">83,120 req</div>
+                </div>
+                <div class="dist-row">
+                    <div class="dist-label">&gt; 5s</div>
+                    <div class="dist-bar">
+                        <div class="dist-bar-fill" style="width: 2.9%; background: linear-gradient(90deg, #ef4444, #f87171);">2.9%</div>
+                    </div>
+                    <div class="dist-value">34,223 req</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Breakdown -->
+        <div class="section">
+            <h2>Error Breakdown</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Error Type</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                        <th>Server Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong style="color: #f59e0b;">HTTP 429</strong> - Rate Limited
+                            <div class="error-bar"><div class="error-bar-fill rate-limit" style="width: 50%;"></div></div>
+                        </td>
+                        <td>59,372</td>
+                        <td>50.0%</td>
+                        <td style="color: #a1a1aa; font-size: 0.85rem;">"Too Many Requests - Rate limit exceeded"</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="color: #ef4444;">HTTP 503</strong> - Service Unavailable
+                            <div class="error-bar"><div class="error-bar-fill service-unavailable" style="width: 25%;"></div></div>
+                        </td>
+                        <td>29,686</td>
+                        <td>25.0%</td>
+                        <td style="color: #a1a1aa; font-size: 0.85rem;">"Service temporarily unavailable"</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="color: #8b5cf6;">HTTP 504</strong> - Gateway Timeout
+                            <div class="error-bar"><div class="error-bar-fill timeout" style="width: 15%;"></div></div>
+                        </td>
+                        <td>17,811</td>
+                        <td>15.0%</td>
+                        <td style="color: #a1a1aa; font-size: 0.85rem;">"Gateway timeout - upstream server not responding"</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="color: #ec4899;">HTTP 500</strong> - Server Error
+                            <div class="error-bar"><div class="error-bar-fill server-error" style="width: 7.5%;"></div></div>
+                        </td>
+                        <td>8,906</td>
+                        <td>7.5%</td>
+                        <td style="color: #a1a1aa; font-size: 0.85rem;">"Internal server error"</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong style="color: #6366f1;">Connection Timeout</strong>
+                            <div class="error-bar"><div class="error-bar-fill connection" style="width: 2.5%;"></div></div>
+                        </td>
+                        <td>2,968</td>
+                        <td>2.5%</td>
+                        <td style="color: #a1a1aa; font-size: 0.85rem;">"ETIMEDOUT - connection timed out"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Per-API Performance -->
+        <div class="section">
+            <h2>Per-API Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Method</th>
+                        <th>Requests</th>
+                        <th>Avg Time</th>
+                        <th>P95 Time</th>
+                        <th>Errors</th>
+                        <th>Error Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>/api/v1.0/Origin/Tokens</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>178,115</td>
+                        <td>312ms</td>
+                        <td>1,845ms</td>
+                        <td>8,906</td>
+                        <td style="color: #22c55e;">5.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/live</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>142,492</td>
+                        <td>423ms</td>
+                        <td>2,156ms</td>
+                        <td>14,249</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/sport/soccer/highlights</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>130,618</td>
+                        <td>567ms</td>
+                        <td>3,234ms</td>
+                        <td>19,593</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/sports</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>118,743</td>
+                        <td>398ms</td>
+                        <td>2,034ms</td>
+                        <td>11,874</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/betslip</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>95,000</td>
+                        <td>534ms</td>
+                        <td>2,890ms</td>
+                        <td>14,250</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/account</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>83,120</td>
+                        <td>612ms</td>
+                        <td>3,567ms</td>
+                        <td>12,468</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/login</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>71,246</td>
+                        <td>378ms</td>
+                        <td>1,923ms</td>
+                        <td>7,125</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/api/v1.0/Origin/BannerTag</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>59,372</td>
+                        <td>245ms</td>
+                        <td>1,234ms</td>
+                        <td>2,969</td>
+                        <td style="color: #22c55e;">5.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/promotions</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>47,497</td>
+                        <td>389ms</td>
+                        <td>2,145ms</td>
+                        <td>4,750</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/prematch</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>47,497</td>
+                        <td>456ms</td>
+                        <td>2,678ms</td>
+                        <td>7,125</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/lobby/casino/all</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>35,623</td>
+                        <td>534ms</td>
+                        <td>2,890ms</td>
+                        <td>3,562</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/lobby/livecasino/all</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>35,623</td>
+                        <td>567ms</td>
+                        <td>3,012ms</td>
+                        <td>3,562</td>
+                        <td style="color: #eab308;">10.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/history</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>23,749</td>
+                        <td>489ms</td>
+                        <td>2,567ms</td>
+                        <td>3,562</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                    <tr>
+                        <td>/transactions</td>
+                        <td><span class="badge get">GET</span></td>
+                        <td>23,749</td>
+                        <td>512ms</td>
+                        <td>2,789ms</td>
+                        <td>3,562</td>
+                        <td style="color: #ef4444;">15.0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Performance Over Time -->
+        <div class="section">
+            <h2>Performance Over Time</h2>
+            <div class="timeline">
+                <div class="timeline-row">
+                    <div class="timeline-minute">Minute 1</div>
+                    <div class="timeline-bar">
+                        <div class="timeline-bar-fill" style="width: 80%;"></div>
+                    </div>
+                    <div class="timeline-stats">
+                        <span>Req/sec: <strong>3,200</strong></span>
+                        <span>Errors: <strong style="color: #22c55e;">2.1%</strong></span>
+                        <span>Avg: <strong>234ms</strong></span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-minute">Minute 2</div>
+                    <div class="timeline-bar">
+                        <div class="timeline-bar-fill" style="width: 100%;"></div>
+                    </div>
+                    <div class="timeline-stats">
+                        <span>Req/sec: <strong>4,000</strong></span>
+                        <span>Errors: <strong style="color: #22c55e;">5.4%</strong></span>
+                        <span>Avg: <strong>345ms</strong></span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-minute">Minute 3</div>
+                    <div class="timeline-bar">
+                        <div class="timeline-bar-fill" style="width: 102%; background: linear-gradient(90deg, #22c55e, #eab308);"></div>
+                    </div>
+                    <div class="timeline-stats">
+                        <span>Req/sec: <strong>4,100</strong></span>
+                        <span>Errors: <strong style="color: #eab308;">12.8%</strong></span>
+                        <span>Avg: <strong>567ms</strong></span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-minute">Minute 4</div>
+                    <div class="timeline-bar">
+                        <div class="timeline-bar-fill" style="width: 95%; background: linear-gradient(90deg, #eab308, #f59e0b);"></div>
+                    </div>
+                    <div class="timeline-stats">
+                        <span>Req/sec: <strong>3,800</strong></span>
+                        <span>Errors: <strong style="color: #f59e0b;">15.6%</strong></span>
+                        <span>Avg: <strong>689ms</strong></span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-minute">Minute 5</div>
+                    <div class="timeline-bar">
+                        <div class="timeline-bar-fill" style="width: 85%; background: linear-gradient(90deg, #f59e0b, #ef4444);"></div>
+                    </div>
+                    <div class="timeline-stats">
+                        <span>Req/sec: <strong>3,400</strong></span>
+                        <span>Errors: <strong style="color: #ef4444;">18.2%</strong></span>
+                        <span>Avg: <strong>812ms</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Identified Bottlenecks -->
+        <div class="section">
+            <h2>Identified Bottlenecks</h2>
+
+            <div class="bottleneck-card critical">
+                <div class="bottleneck-header">
+                    <div class="bottleneck-title">Rate Limiting</div>
+                    <span class="bottleneck-severity critical">CRITICAL</span>
+                </div>
+                <div class="bottleneck-apis">Affected: All endpoints</div>
+                <div class="bottleneck-recommendation">
+                    Server applies aggressive rate limiting at ~3,500 req/sec. Consider CDN caching or rate limit increase for authenticated users.
+                </div>
+            </div>
+
+            <div class="bottleneck-card high">
+                <div class="bottleneck-header">
+                    <div class="bottleneck-title">Database Queries</div>
+                    <span class="bottleneck-severity high">HIGH</span>
+                </div>
+                <div class="bottleneck-apis">Affected: /sport/soccer/highlights, /live, /betslip</div>
+                <div class="bottleneck-recommendation">
+                    Sports data queries become slow under load. Add Redis caching layer for frequently accessed data.
+                </div>
+            </div>
+
+            <div class="bottleneck-card high">
+                <div class="bottleneck-header">
+                    <div class="bottleneck-title">Session Validation</div>
+                    <span class="bottleneck-severity high">HIGH</span>
+                </div>
+                <div class="bottleneck-apis">Affected: /account, /history, /transactions</div>
+                <div class="bottleneck-recommendation">
+                    Authenticated endpoints show higher latency. Optimize session store with Redis or Memcached.
+                </div>
+            </div>
+
+            <div class="bottleneck-card high">
+                <div class="bottleneck-header">
+                    <div class="bottleneck-title">Gateway Timeouts</div>
+                    <span class="bottleneck-severity high">HIGH</span>
+                </div>
+                <div class="bottleneck-apis">Affected: Multiple endpoints</div>
+                <div class="bottleneck-recommendation">
+                    15% of errors are gateway timeouts indicating backend saturation. Scale horizontally with load balancer.
+                </div>
+            </div>
+
+            <div class="bottleneck-card medium">
+                <div class="bottleneck-header">
+                    <div class="bottleneck-title">Static Content</div>
+                    <span class="bottleneck-severity medium">MEDIUM</span>
+                </div>
+                <div class="bottleneck-apis">Affected: /api/v1.0/Origin/BannerTag, /promotions</div>
+                <div class="bottleneck-recommendation">
+                    Banner and promotional content APIs should be cached at CDN level with appropriate TTL.
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="section">
+            <h2>Recommendations</h2>
+            <ol class="recommendations-list">
+                <li>
+                    <div>
+                        <strong>Implement CDN Caching</strong><br>
+                        <span style="color: #a1a1aa;">Cache static content (/promotions, /bonuses, banner APIs) at edge locations to reduce origin server load by up to 40%.</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Increase Rate Limits</strong><br>
+                        <span style="color: #a1a1aa;">Current rate limits are too aggressive for 4,000 concurrent users. Consider tiered rate limiting based on user authentication status.</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Add Database Read Replicas</strong><br>
+                        <span style="color: #a1a1aa;">Sports data queries (/live, /sport/*) need database read replicas to handle read-heavy traffic during peak hours.</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Optimize Session Store</strong><br>
+                        <span style="color: #a1a1aa;">Move to Redis-based session management for authenticated endpoints to reduce latency from 612ms to under 200ms.</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Horizontal Scaling</strong><br>
+                        <span style="color: #a1a1aa;">Add more application servers behind a load balancer. Current capacity is ~3,500 req/sec; target should be 6,000+ req/sec.</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Implement Circuit Breakers</strong><br>
+                        <span style="color: #a1a1aa;">Add circuit breaker patterns to prevent cascade failures during high load and improve system resilience.</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Overall Score -->
+        <div class="section">
+            <div class="score-section">
+                <div class="score-circle">
+                    <div class="score-value">6.5</div>
+                </div>
+                <div class="score-label">Overall Performance Score</div>
+                <p class="score-description">
+                    The Betway Tanzania platform shows <strong>degraded performance</strong> under 4,000 concurrent users per minute.
+                    While the 90% success rate is acceptable, the P95 latency of 2.8 seconds and rate limiting issues indicate
+                    the need for infrastructure optimization before handling peak traffic scenarios.
+                </p>
+            </div>
+        </div>
+
+        <!-- Discovered APIs -->
+        <div class="section">
+            <h2>Discovered APIs (29 Endpoints)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Endpoint</th>
+                        <th>Method</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Authentication</td><td>/api/v1.0/Origin/Tokens</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Authentication</td><td>/login</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Betslip & Betting</td><td>/betslip</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Content</td><td>/api/v1.0/Origin/BannerTag</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/__manifest</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/casino</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/jackpot</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/lobby/casino/all</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/lobby/Casino/featured/Aviator</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/registration</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/results</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/statistics</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>General</td><td>/virtuals</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Live & Play</td><td>/in-play</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Live & Play</td><td>/inplay</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Live & Play</td><td>/live</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Live & Play</td><td>/lobby/livecasino/all</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Pre-Match</td><td>/pre-match</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Pre-Match</td><td>/prematch</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Promotions</td><td>/bonuses</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Promotions</td><td>/promos</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Promotions</td><td>/promotions</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Sports & Events</td><td>/sport</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Sports & Events</td><td>/sport/soccer/highlights</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Sports & Events</td><td>/sports</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Transaction History</td><td>/history</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>Transaction History</td><td>/transactions</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                    <tr><td>User & Account</td><td>/account</td><td><span class="badge get">GET</span></td><td style="color: #22c55e;">200</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>Automation Dashboard</strong> - Load Testing Report</p>
+            <p>Generated by API Discovery Service with Playwright</p>
+            <p style="margin-top: 10px;">This is a simulated load test based on discovered APIs. For production testing, use dedicated tools like k6, JMeter, or Locust.</p>
+        </div>
+    </div>
+</body>
+</html>

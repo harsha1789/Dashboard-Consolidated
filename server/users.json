@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "harsha",
+      "username": "Harsha",
+      "password": "Harsha",
+      "email": "harsha@zensar.com",
+      "role": "developer",
+      "avatar": null,
+      "createdAt": "2026-01-23T10:31:07.581Z",
+      "lastLogin": "2026-01-23T12:28:10.092Z",
+      "preferences": {
+        "theme": "dark",
+        "defaultClient": "default",
+        "notifications": true
+      },
+      "stats": {
+        "totalTestRuns": 0,
+        "passedTests": 0,
+        "failedTests": 0,
+        "lastActivity": null
+      }
+    }
+  ]
+}

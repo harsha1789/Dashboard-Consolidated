@@ -1,0 +1,179 @@
+============================================================
+     COORDINATOR INSTRUCTIONS - DISTRIBUTED LOAD TEST
+============================================================
+
+You are the test coordinator. Follow these steps to run a
+successful distributed load test with your team.
+
+============================================================
+STEP 1: PREPARE THE KIT
+============================================================
+
+Send these files to each colleague:
+  - betway-loadtest.js
+  - run-loadtest-windows.bat  (for Windows users)
+  - run-loadtest-mac.sh       (for Mac/Linux users)
+  - README.txt
+
+You can:
+  a) Zip this entire "distributed-colleagues" folder and email it
+  b) Share via Google Drive, OneDrive, or Dropbox
+  c) Share via Slack/Teams
+
+============================================================
+STEP 2: COLLECT PARTICIPANT INFO
+============================================================
+
+Ask each participant to tell you:
+  1. Their name
+  2. Their operating system (Windows/Mac/Linux)
+  3. Confirm they've installed k6
+
+Participant Tracking Table:
+------------------------------------------------------------
+| Name          | OS      | k6 Installed | IP Address     |
+|---------------|---------|--------------|----------------|
+| (You)         | Windows | Yes          |                |
+|               |         |              |                |
+|               |         |              |                |
+|               |         |              |                |
+------------------------------------------------------------
+
+============================================================
+STEP 3: COORDINATE START TIME
+============================================================
+
+Choose a start time that works for everyone.
+Use a specific time with timezone, e.g.:
+
+  "Start at 3:00 PM EAT (East Africa Time)"
+  "Start at 12:00 PM UTC"
+
+Helpful tools:
+  - World clock: https://time.is
+  - Time zone converter: https://www.worldtimebuddy.com
+
+Recommended: Have everyone on a video/voice call for
+real-time coordination.
+
+============================================================
+STEP 4: PRE-TEST CHECKLIST
+============================================================
+
+Before starting, confirm with each participant:
+
+[ ] k6 is installed and working
+[ ] They have the test files ready
+[ ] They know the start time
+[ ] They have stable internet connection
+[ ] They won't close the terminal during the test
+
+============================================================
+STEP 5: RUN THE TEST
+============================================================
+
+At the agreed time, everyone runs their script:
+
+  Windows: Double-click run-loadtest-windows.bat
+  Mac/Linux: ./run-loadtest-mac.sh
+
+The test will:
+  - Ramp up over 2 minutes
+  - Hold at full load for 2 minutes
+  - Ramp down over 1 minute
+  - Total: ~5 minutes
+
+============================================================
+STEP 6: COLLECT RESULTS
+============================================================
+
+After the test, ask each participant to send you:
+
+  1. Screenshot of their terminal output
+  2. Or copy-paste the summary section
+
+Key metrics to collect:
+  - http_reqs: Total requests made
+  - http_req_duration: Response times (avg, p95)
+  - http_req_failed: Error percentage
+  - Their public IP (shown at start)
+
+============================================================
+STEP 7: AGGREGATE RESULTS
+============================================================
+
+Create a summary table:
+
+| Participant | IP Address    | Requests | Avg Time | Errors |
+|-------------|---------------|----------|----------|--------|
+| Person 1    | 102.x.x.x     | 15,234   | 456ms    | 8.2%   |
+| Person 2    | 197.x.x.x     | 14,876   | 523ms    | 9.1%   |
+| Person 3    | 41.x.x.x      | 15,102   | 489ms    | 7.8%   |
+| Person 4    | 154.x.x.x     | 14,998   | 512ms    | 8.5%   |
+|-------------|---------------|----------|----------|--------|
+| TOTAL       | 4 IPs         | 60,210   | 495ms    | 8.4%   |
+
+============================================================
+ADJUSTING VIRTUAL USERS
+============================================================
+
+To change the number of VUs per person, edit betway-loadtest.js:
+
+Line 18:  virtualUsers: 1000,  // Change this number
+
+Suggestions:
+  - 4 people x 1000 VUs = 4000 total users
+  - 4 people x 500 VUs = 2000 total users
+  - 2 people x 2000 VUs = 4000 total users (more aggressive)
+
+============================================================
+TROUBLESHOOTING
+============================================================
+
+"Participant can't install k6":
+  - Try portable version (no install needed)
+  - Or use Docker: docker run -v $(pwd):/scripts grafana/k6 run /scripts/betway-loadtest.js
+
+"High error rates (>30%)":
+  - Target server is overloaded (that's the test!)
+  - Or reduce VUs per person
+
+"Connection timeouts":
+  - Internet connectivity issue
+  - Target server blocking traffic
+  - Reduce load and retry
+
+"Results vary wildly between participants":
+  - Normal due to different geographic locations
+  - Different ISP routing
+  - This is realistic distributed testing!
+
+============================================================
+SAMPLE EMAIL TO COLLEAGUES
+============================================================
+
+Subject: Load Test Participation - Need Your Help!
+
+Hi Team,
+
+We're running a distributed load test on Betway Tanzania
+to simulate 4000 concurrent users from different locations.
+
+I need 3-4 volunteers to help by running a simple script
+from your computer.
+
+What you need to do:
+1. Install k6 (takes 2 minutes) - instructions attached
+2. Run the script I'll send you
+3. Share the results with me
+
+Time commitment: About 10 minutes total
+
+The test is scheduled for: [DATE/TIME]
+
+Please reply if you can participate!
+
+Thanks,
+[Your Name]
+
+============================================================

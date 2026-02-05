@@ -1,0 +1,68 @@
+{
+  "id": "1770273963968",
+  "url": "https://example.com",
+  "site": "example.com",
+  "timestamp": "2026-02-05T06:47:18.225Z",
+  "duration": "74.26s",
+  "results": [
+    {
+      "route": "/",
+      "viewports": [
+        {
+          "viewport": "Desktop",
+          "width": 1920,
+          "height": 1080,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-desktop-fullpage.png",
+            "status": "pass",
+            "baseline": "baselines/example.com/home-desktop-fullpage.png",
+            "current": "runs/1770273963968/home-desktop-fullpage.png",
+            "diffPixels": 0,
+            "totalPixels": 2073600,
+            "matchingPixels": 2073600,
+            "accuracy": "100.00",
+            "diff": "runs/1770273963968/home-desktop-fullpage-diff.png"
+          },
+          "components": []
+        },
+        {
+          "viewport": "Tablet",
+          "width": 768,
+          "height": 1024,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-tablet-fullpage.png",
+            "status": "pass",
+            "baseline": "baselines/example.com/home-tablet-fullpage.png",
+            "current": "runs/1770273963968/home-tablet-fullpage.png",
+            "diffPixels": 0,
+            "totalPixels": 786432,
+            "matchingPixels": 786432,
+            "accuracy": "100.00",
+            "diff": "runs/1770273963968/home-tablet-fullpage-diff.png"
+          },
+          "components": []
+        },
+        {
+          "viewport": "Mobile",
+          "width": 375,
+          "height": 667,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-mobile-fullpage.png",
+            "status": "pass",
+            "baseline": "baselines/example.com/home-mobile-fullpage.png",
+            "current": "runs/1770273963968/home-mobile-fullpage.png",
+            "diffPixels": 0,
+            "totalPixels": 250125,
+            "matchingPixels": 250125,
+            "accuracy": "100.00",
+            "diff": "runs/1770273963968/home-mobile-fullpage-diff.png"
+          },
+          "components": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "1769165142723",
+  "url": "https://www.amazon.in/",
+  "site": "www.amazon.in",
+  "timestamp": "2026-01-23T10:48:57.590Z",
+  "duration": "194.87s",
+  "results": [
+    {
+      "route": "/",
+      "viewports": [
+        {
+          "viewport": "Desktop",
+          "width": 1920,
+          "height": 1080,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-desktop-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines\\www.amazon.in\\home-desktop-fullpage.png",
+            "current": "runs\\1769165142723\\home-desktop-fullpage.png",
+            "diffPixels": -1,
+            "accuracy": "0.00",
+            "diff": "runs\\1769165142723\\home-desktop-fullpage-diff.png"
+          },
+          "components": [
+            {
+              "name": "Header",
+              "filename": "home-header.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-header.png",
+              "current": "runs\\1769165142723\\home-header.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-header-diff.png"
+            },
+            {
+              "name": "Navigation",
+              "filename": "home-navigation.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-navigation.png",
+              "current": "runs\\1769165142723\\home-navigation.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-navigation-diff.png"
+            },
+            {
+              "name": "Hero Section",
+              "filename": "home-hero-section.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-hero-section.png",
+              "current": "runs\\1769165142723\\home-hero-section.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-hero-section-diff.png"
+            },
+            {
+              "name": "Primary Form",
+              "filename": "home-primary-form.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-primary-form.png",
+              "current": "runs\\1769165142723\\home-primary-form.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-primary-form-diff.png"
+            },
+            {
+              "name": "Input Field 1",
+              "filename": "home-input-field-1.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-input-field-1.png",
+              "current": "runs\\1769165142723\\home-input-field-1.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-input-field-1-diff.png"
+            },
+            {
+              "name": "Button 1",
+              "filename": "home-button-1.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-button-1.png",
+              "current": "runs\\1769165142723\\home-button-1.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-button-1-diff.png"
+            },
+            {
+              "name": "Button 2",
+              "filename": "home-button-2.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-button-2.png",
+              "current": "runs\\1769165142723\\home-button-2.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-button-2-diff.png"
+            },
+            {
+              "name": "Button 3",
+              "filename": "home-button-3.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-button-3.png",
+              "current": "runs\\1769165142723\\home-button-3.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-button-3-diff.png"
+            },
+            {
+              "name": "Button 4",
+              "filename": "home-button-4.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-button-4.png",
+              "current": "runs\\1769165142723\\home-button-4.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-button-4-diff.png"
+            },
+            {
+              "name": "Button 5",
+              "filename": "home-button-5.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-button-5.png",
+              "current": "runs\\1769165142723\\home-button-5.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-button-5-diff.png"
+            },
+            {
+              "name": "Dropdown 1",
+              "filename": "home-dropdown-1.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-dropdown-1.png",
+              "current": "runs\\1769165142723\\home-dropdown-1.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-dropdown-1-diff.png"
+            },
+            {
+              "name": "Card Component",
+              "filename": "home-card-component.png",
+              "status": "fail",
+              "baseline": "baselines\\www.amazon.in\\home-card-component.png",
+              "current": "runs\\1769165142723\\home-card-component.png",
+              "diffPixels": -1,
+              "accuracy": "0.00",
+              "diff": "runs\\1769165142723\\home-card-component-diff.png"
+            }
+          ]
+        },
+        {
+          "viewport": "Tablet",
+          "width": 768,
+          "height": 1024,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-tablet-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines\\www.amazon.in\\home-tablet-fullpage.png",
+            "current": "runs\\1769165142723\\home-tablet-fullpage.png",
+            "diffPixels": -1,
+            "accuracy": "0.00",
+            "diff": "runs\\1769165142723\\home-tablet-fullpage-diff.png"
+          },
+          "components": []
+        },
+        {
+          "viewport": "Mobile",
+          "width": 375,
+          "height": 667,
+          "fullPage": {
+            "name": "Full Page",
+            "filename": "home-mobile-fullpage.png",
+            "status": "fail",
+            "baseline": "baselines\\www.amazon.in\\home-mobile-fullpage.png",
+            "current": "runs\\1769165142723\\home-mobile-fullpage.png",
+            "diffPixels": -1,
+            "accuracy": "0.00",
+            "diff": "runs\\1769165142723\\home-mobile-fullpage-diff.png"
+          },
+          "components": []
+        }
+      ]
+    }
+  ]
+}

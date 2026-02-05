@@ -1,0 +1,5250 @@
+{
+  "tests": [
+    {
+      "id": "lt-1769813533126",
+      "name": "Load Test lt-1769813533126",
+      "targetUrl": "https://www.betway.co.za/lobby/casino-games/game/wealth-inn?vertical=casino-games",
+      "startTime": "2026-01-30T22:52:13.154Z",
+      "endTime": "2026-01-30T22:53:15.266Z",
+      "duration": 62,
+      "config": {
+        "testName": "",
+        "testType": "single",
+        "virtualUsers": 10,
+        "rampUpTime": 30,
+        "duration": 60,
+        "requestsPerSecond": 100,
+        "thinkTime": 1,
+        "environment": "dev",
+        "scheduleTest": false,
+        "scheduleTime": null
+      },
+      "selectedApis": [
+        {
+          "method": "POST",
+          "endpoint": "/ps"
+        },
+        {
+          "method": "POST",
+          "endpoint": "/collect"
+        }
+      ],
+      "status": "completed",
+      "results": {
+        "avgTime": 290,
+        "throughput": 19.2,
+        "errorRate": 0.17
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 1152,
+          "successfulRequests": 1150,
+          "failedRequests": 2,
+          "avgResponseTime": 290,
+          "p95ResponseTime": 302,
+          "p99ResponseTime": 669,
+          "throughput": 19.2,
+          "errorRate": 0.17,
+          "peakVUs": 10,
+          "duration": 60
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 456,
+            "throughput": 3,
+            "errorRate": 0,
+            "activeUsers": 1
+          },
+          {
+            "time": 2,
+            "responseTime": 413,
+            "throughput": 2,
+            "errorRate": 0,
+            "activeUsers": 1
+          },
+          {
+            "time": 3,
+            "responseTime": 410,
+            "throughput": 2.7,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 4,
+            "responseTime": 410,
+            "throughput": 2,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 5,
+            "responseTime": 367,
+            "throughput": 2.4,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 6,
+            "responseTime": 350,
+            "throughput": 2.5,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 7,
+            "responseTime": 365,
+            "throughput": 2.7,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 8,
+            "responseTime": 349,
+            "throughput": 3,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 9,
+            "responseTime": 336,
+            "throughput": 3.3,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 10,
+            "responseTime": 333,
+            "throughput": 3.3,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 11,
+            "responseTime": 325,
+            "throughput": 3.5,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 12,
+            "responseTime": 319,
+            "throughput": 3.8,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 13,
+            "responseTime": 317,
+            "throughput": 3.8,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 14,
+            "responseTime": 298,
+            "throughput": 4.2,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 15,
+            "responseTime": 298,
+            "throughput": 4.3,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 16,
+            "responseTime": 299,
+            "throughput": 4.5,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 17,
+            "responseTime": 299,
+            "throughput": 4.7,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 18,
+            "responseTime": 299,
+            "throughput": 4.8,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 19,
+            "responseTime": 299,
+            "throughput": 5.1,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 20,
+            "responseTime": 298,
+            "throughput": 5.3,
+            "errorRate": 0,
+            "activeUsers": 7
+          },
+          {
+            "time": 21,
+            "responseTime": 298,
+            "throughput": 5.4,
+            "errorRate": 0,
+            "activeUsers": 7
+          },
+          {
+            "time": 22,
+            "responseTime": 286,
+            "throughput": 5.5,
+            "errorRate": 0,
+            "activeUsers": 7
+          },
+          {
+            "time": 23,
+            "responseTime": 295,
+            "throughput": 5.8,
+            "errorRate": 0,
+            "activeUsers": 8
+          },
+          {
+            "time": 24,
+            "responseTime": 295,
+            "throughput": 6,
+            "errorRate": 0,
+            "activeUsers": 8
+          },
+          {
+            "time": 25,
+            "responseTime": 295,
+            "throughput": 6.2,
+            "errorRate": 0,
+            "activeUsers": 8
+          },
+          {
+            "time": 26,
+            "responseTime": 297,
+            "throughput": 6.4,
+            "errorRate": 0,
+            "activeUsers": 9
+          },
+          {
+            "time": 27,
+            "responseTime": 297,
+            "throughput": 6.5,
+            "errorRate": 0,
+            "activeUsers": 9
+          },
+          {
+            "time": 28,
+            "responseTime": 286,
+            "throughput": 6.8,
+            "errorRate": 0,
+            "activeUsers": 9
+          },
+          {
+            "time": 29,
+            "responseTime": 285,
+            "throughput": 6.9,
+            "errorRate": 0.5,
+            "activeUsers": 9
+          },
+          {
+            "time": 30,
+            "responseTime": 291,
+            "throughput": 7.1,
+            "errorRate": 0.47,
+            "activeUsers": 10
+          },
+          {
+            "time": 31,
+            "responseTime": 290,
+            "throughput": 7.3,
+            "errorRate": 0.44,
+            "activeUsers": 10
+          },
+          {
+            "time": 32,
+            "responseTime": 290,
+            "throughput": 7.4,
+            "errorRate": 0.42,
+            "activeUsers": 10
+          },
+          {
+            "time": 33,
+            "responseTime": 291,
+            "throughput": 7.6,
+            "errorRate": 0.4,
+            "activeUsers": 10
+          },
+          {
+            "time": 34,
+            "responseTime": 283,
+            "throughput": 7.8,
+            "errorRate": 0.38,
+            "activeUsers": 10
+          },
+          {
+            "time": 35,
+            "responseTime": 284,
+            "throughput": 7.9,
+            "errorRate": 0.36,
+            "activeUsers": 10
+          },
+          {
+            "time": 36,
+            "responseTime": 285,
+            "throughput": 8.1,
+            "errorRate": 0.34,
+            "activeUsers": 10
+          },
+          {
+            "time": 37,
+            "responseTime": 284,
+            "throughput": 8.2,
+            "errorRate": 0.33,
+            "activeUsers": 10
+          },
+          {
+            "time": 38,
+            "responseTime": 284,
+            "throughput": 8.3,
+            "errorRate": 0.32,
+            "activeUsers": 10
+          },
+          {
+            "time": 39,
+            "responseTime": 283,
+            "throughput": 8.4,
+            "errorRate": 0.3,
+            "activeUsers": 10
+          },
+          {
+            "time": 41,
+            "responseTime": 283,
+            "throughput": 8.4,
+            "errorRate": 0.29,
+            "activeUsers": 10
+          },
+          {
+            "time": 42,
+            "responseTime": 283,
+            "throughput": 8.5,
+            "errorRate": 0.28,
+            "activeUsers": 10
+          },
+          {
+            "time": 43,
+            "responseTime": 283,
+            "throughput": 8.6,
+            "errorRate": 0.27,
+            "activeUsers": 10
+          },
+          {
+            "time": 43,
+            "responseTime": 282,
+            "throughput": 8.9,
+            "errorRate": 0.26,
+            "activeUsers": 10
+          },
+          {
+            "time": 45,
+            "responseTime": 282,
+            "throughput": 8.8,
+            "errorRate": 0.25,
+            "activeUsers": 10
+          },
+          {
+            "time": 46,
+            "responseTime": 282,
+            "throughput": 8.8,
+            "errorRate": 0.25,
+            "activeUsers": 10
+          },
+          {
+            "time": 47,
+            "responseTime": 283,
+            "throughput": 8.9,
+            "errorRate": 0.24,
+            "activeUsers": 10
+          },
+          {
+            "time": 48,
+            "responseTime": 284,
+            "throughput": 9,
+            "errorRate": 0.23,
+            "activeUsers": 10
+          },
+          {
+            "time": 49,
+            "responseTime": 284,
+            "throughput": 9.1,
+            "errorRate": 0.22,
+            "activeUsers": 10
+          },
+          {
+            "time": 50,
+            "responseTime": 285,
+            "throughput": 9.1,
+            "errorRate": 0.22,
+            "activeUsers": 10
+          },
+          {
+            "time": 51,
+            "responseTime": 285,
+            "throughput": 9.3,
+            "errorRate": 0.21,
+            "activeUsers": 10
+          },
+          {
+            "time": 52,
+            "responseTime": 284,
+            "throughput": 9.3,
+            "errorRate": 0.21,
+            "activeUsers": 10
+          },
+          {
+            "time": 52,
+            "responseTime": 285,
+            "throughput": 9.5,
+            "errorRate": 0.2,
+            "activeUsers": 10
+          },
+          {
+            "time": 53,
+            "responseTime": 284,
+            "throughput": 9.6,
+            "errorRate": 0.2,
+            "activeUsers": 10
+          },
+          {
+            "time": 55,
+            "responseTime": 284,
+            "throughput": 9.5,
+            "errorRate": 0.19,
+            "activeUsers": 10
+          },
+          {
+            "time": 56,
+            "responseTime": 284,
+            "throughput": 9.6,
+            "errorRate": 0.19,
+            "activeUsers": 10
+          },
+          {
+            "time": 57,
+            "responseTime": 284,
+            "throughput": 9.6,
+            "errorRate": 0.18,
+            "activeUsers": 10
+          },
+          {
+            "time": 57,
+            "responseTime": 285,
+            "throughput": 9.8,
+            "errorRate": 0.18,
+            "activeUsers": 10
+          },
+          {
+            "time": 58,
+            "responseTime": 287,
+            "throughput": 9.9,
+            "errorRate": 0.17,
+            "activeUsers": 10
+          },
+          {
+            "time": 60,
+            "responseTime": 288,
+            "throughput": 9.6,
+            "errorRate": 0.17,
+            "activeUsers": 3
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "POST",
+            "endpoint": "/ps",
+            "fullUrl": "https://gs-betway.insvr.com/ps?client=1.1.18662.970",
+            "category": "General",
+            "auth": "None",
+            "params": [
+              {
+                "name": "client",
+                "type": "string",
+                "value": "1.1.18662.970"
+              }
+            ],
+            "headers": [
+              {
+                "name": ":authority",
+                "value": "gs-betway.insvr.com"
+              },
+              {
+                "name": ":method",
+                "value": "POST"
+              },
+              {
+                "name": ":path",
+                "value": "/ps?client=1.1.18662.970"
+              },
+              {
+                "name": ":scheme",
+                "value": "https"
+              },
+              {
+                "name": "accept",
+                "value": "application/json"
+              },
+              {
+                "name": "accept-encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "accept-language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "name": "content-length",
+                "value": "503"
+              },
+              {
+                "name": "content-type",
+                "value": "application/json"
+              },
+              {
+                "name": "origin",
+                "value": "https://app-betway.insvr.com"
+              },
+              {
+                "name": "priority",
+                "value": "u=1, i"
+              },
+              {
+                "name": "referer",
+                "value": "https://app-betway.insvr.com/"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "name": "sec-fetch-dest",
+                "value": "empty"
+              },
+              {
+                "name": "sec-fetch-mode",
+                "value": "cors"
+              },
+              {
+                "name": "sec-fetch-site",
+                "value": "same-site"
+              },
+              {
+                "name": "user-agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0"
+              }
+            ],
+            "body": {
+              "game": {
+                "action": "game",
+                "sessionid": "b34161db-2557-43c4-a023-90ae0c3d4289",
+                "brandgameid": "726808bf-671a-42a8-b123-52200f907aeb",
+                "kn": "SGWealthInnBetway"
+              },
+              "portmessage": "{\"coinValue\":5,\"betLevel\":10,\"numLines\":8,\"gameMode\":\"base\",\"pssid\":\"\"}",
+              "header": {
+                "player": {
+                  "ssotoken": "ps-4539179bb6ff7494d97bce05d1f0a875f87f5uq1mo0kb",
+                  "funmode": false,
+                  "brandid": "66f160ed-7697-eb11-b566-501ac5016c00",
+                  "lc": "en",
+                  "mobile": false
+                },
+                "version": "1.1.18662.970"
+              },
+              "grid": "5c754035-40ca-4b10-993e-093109c82dba"
+            },
+            "status": "healthy",
+            "description": "POST /ps",
+            "source": "har",
+            "requests": 576,
+            "avgTime": 292,
+            "p95Time": 300,
+            "errors": 2,
+            "errorDetails": []
+          },
+          {
+            "id": 2,
+            "method": "POST",
+            "endpoint": "/collect",
+            "fullUrl": "https://s.clarity.ms/collect",
+            "category": "General",
+            "auth": "None",
+            "params": [],
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/x-clarity-gzip"
+              },
+              {
+                "name": "Accept-Encoding",
+                "value": "gzip, deflate, br, zstd"
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.9"
+              },
+              {
+                "name": "Connection",
+                "value": "keep-alive"
+              },
+              {
+                "name": "Content-Length",
+                "value": "500"
+              },
+              {
+                "name": "Host",
+                "value": "s.clarity.ms"
+              },
+              {
+                "name": "Origin",
+                "value": "https://www.betway.co.za"
+              },
+              {
+                "name": "Referer",
+                "value": "https://www.betway.co.za/"
+              },
+              {
+                "name": "Sec-Fetch-Dest",
+                "value": "empty"
+              },
+              {
+                "name": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "name": "Sec-Fetch-Site",
+                "value": "cross-site"
+              },
+              {
+                "name": "Sec-Fetch-Storage-Access",
+                "value": "active"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\""
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              }
+            ],
+            "body": "\u001f\b\u0000\u0000\u0000\u0000\u0000\u0000\nUÓán\u001a1\f\u0007ðwÉçÁvl'®4íA\u0010\u001f\u000eV$F»õVÔM{÷)ã\tàßYq|Ò)=ï\u0012mêÆ8Á!âÕÀBAH«\u0015=}Î\t\u000fLY$¤ÁãñÀ\n>ée\u001cßÞ·ÛÛí¶9ÆÛð¹9¾n~\u000fÛËëáð¹=\u000eïçëëÓ·áûé}Û¾··Óp\u0019_Î×ëSÏÿúqú9ÃåËcrÚ#\réy·\u0010©`WB¨C#ïÑXia\nØÌzçZ\u0018fµ³ùÄ¥¢f\u0005wvºs\tKãÌÄÜ¸hE®mæzgõ\f'ï,ù~¤µ½ëJ¼\u0015èÚy­ÛKéÌ¶pÉ\u0015çJÌ¿C\u0002ãèì¾°3jçÂÿõæMª,l\f¹îZ\u0016®\u0002\rê\u001cK¿È µÉl«\u000bAké^\u001eòWÜGtq\u0011ð²ºÊêY\u001e|Ê¯®Í[=SÇÄÈÖ¹\bhõÎ¼l\u001fì0¦ÎÂë\\\u0004,Îy9´f¹Ììë\\\u0010,¬³ö\u0001(\u0005E\u0005.­þâ(\u0018Ò¯ÜJÿ¥ÕAàv±Ä-T\bG6xÔ\u0010\u0005?<B!&¸\b¦¡\u0012¢Ò£©ÇóeL\u001c¸þº\\ZQZJ{\u001b\u0005\u0002\u0019\nE`ê\u0018úpM)Ùá­ØÈÑÒs+ :¯\u0016¹U+>Çek´5z©?Ï\u001cZÚ*óC+h¿ßÿý\u0007ª\u0016©ãZ\u0004\u0000\u0000",
+            "status": "healthy",
+            "description": "POST /collect",
+            "source": "har",
+            "requests": 576,
+            "avgTime": 287,
+            "p95Time": 305,
+            "errors": 0,
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 0,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 0,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 0,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 0,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 0,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T22:53:15.269Z"
+    },
+    {
+      "id": "lt-1769809813649",
+      "name": "Wealth Inn - Auto Spin (Habanero)",
+      "targetUrl": "https://gs-betway.insvr.com",
+      "startTime": "2026-01-30T21:50:13.690Z",
+      "endTime": "2026-01-30T21:51:17.806Z",
+      "duration": 64,
+      "config": {
+        "virtualUsers": 10,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Wealth Inn - Auto Spin (Habanero)"
+      },
+      "selectedApis": [
+        {
+          "method": "POST",
+          "endpoint": "/ps?client=1.1.18662.970"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 193,
+        "throughput": 26.8,
+        "errorRate": 50
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 1606,
+          "successfulRequests": 803,
+          "failedRequests": 803,
+          "avgResponseTime": 193,
+          "p95ResponseTime": 248,
+          "p99ResponseTime": 635,
+          "throughput": 26.8,
+          "errorRate": 50,
+          "peakVUs": 10,
+          "duration": 60
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 205,
+            "throughput": 6,
+            "errorRate": 50,
+            "activeUsers": 2
+          },
+          {
+            "time": 2,
+            "responseTime": 247,
+            "throughput": 5,
+            "errorRate": 50,
+            "activeUsers": 3
+          },
+          {
+            "time": 3,
+            "responseTime": 258,
+            "throughput": 5.3,
+            "errorRate": 50,
+            "activeUsers": 4
+          },
+          {
+            "time": 4,
+            "responseTime": 235,
+            "throughput": 6.5,
+            "errorRate": 50,
+            "activeUsers": 5
+          },
+          {
+            "time": 6,
+            "responseTime": 226,
+            "throughput": 5.8,
+            "errorRate": 48.57,
+            "activeUsers": 6
+          },
+          {
+            "time": 7,
+            "responseTime": 223,
+            "throughput": 6.3,
+            "errorRate": 47.73,
+            "activeUsers": 7
+          },
+          {
+            "time": 8,
+            "responseTime": 216,
+            "throughput": 7,
+            "errorRate": 50,
+            "activeUsers": 8
+          },
+          {
+            "time": 9,
+            "responseTime": 192,
+            "throughput": 8,
+            "errorRate": 50,
+            "activeUsers": 9
+          },
+          {
+            "time": 10,
+            "responseTime": 189,
+            "throughput": 8.4,
+            "errorRate": 48.81,
+            "activeUsers": 9
+          },
+          {
+            "time": 11,
+            "responseTime": 184,
+            "throughput": 8.8,
+            "errorRate": 49.48,
+            "activeUsers": 10
+          },
+          {
+            "time": 11,
+            "responseTime": 201,
+            "throughput": 10.3,
+            "errorRate": 49.56,
+            "activeUsers": 10
+          },
+          {
+            "time": 12,
+            "responseTime": 207,
+            "throughput": 10.4,
+            "errorRate": 48.8,
+            "activeUsers": 10
+          },
+          {
+            "time": 14,
+            "responseTime": 218,
+            "throughput": 9.9,
+            "errorRate": 49.28,
+            "activeUsers": 10
+          },
+          {
+            "time": 15,
+            "responseTime": 246,
+            "throughput": 10.1,
+            "errorRate": 49.01,
+            "activeUsers": 10
+          },
+          {
+            "time": 15,
+            "responseTime": 222,
+            "throughput": 11.1,
+            "errorRate": 49.7,
+            "activeUsers": 10
+          },
+          {
+            "time": 17,
+            "responseTime": 226,
+            "throughput": 10.7,
+            "errorRate": 48.9,
+            "activeUsers": 10
+          },
+          {
+            "time": 18,
+            "responseTime": 215,
+            "throughput": 10.8,
+            "errorRate": 49.74,
+            "activeUsers": 10
+          },
+          {
+            "time": 19,
+            "responseTime": 196,
+            "throughput": 11.1,
+            "errorRate": 49.52,
+            "activeUsers": 10
+          },
+          {
+            "time": 20,
+            "responseTime": 185,
+            "throughput": 11.3,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 21,
+            "responseTime": 187,
+            "throughput": 11.4,
+            "errorRate": 49.17,
+            "activeUsers": 10
+          },
+          {
+            "time": 22,
+            "responseTime": 187,
+            "throughput": 11.5,
+            "errorRate": 49.6,
+            "activeUsers": 10
+          },
+          {
+            "time": 22,
+            "responseTime": 198,
+            "throughput": 12.1,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 24,
+            "responseTime": 194,
+            "throughput": 11.9,
+            "errorRate": 49.82,
+            "activeUsers": 10
+          },
+          {
+            "time": 25,
+            "responseTime": 194,
+            "throughput": 11.7,
+            "errorRate": 49.66,
+            "activeUsers": 10
+          },
+          {
+            "time": 25,
+            "responseTime": 202,
+            "throughput": 12.3,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 26,
+            "responseTime": 204,
+            "throughput": 12.5,
+            "errorRate": 49.85,
+            "activeUsers": 10
+          },
+          {
+            "time": 28,
+            "responseTime": 204,
+            "throughput": 12.2,
+            "errorRate": 49.85,
+            "activeUsers": 10
+          },
+          {
+            "time": 28,
+            "responseTime": 196,
+            "throughput": 12.5,
+            "errorRate": 49.71,
+            "activeUsers": 10
+          },
+          {
+            "time": 30,
+            "responseTime": 183,
+            "throughput": 12.3,
+            "errorRate": 49.73,
+            "activeUsers": 10
+          },
+          {
+            "time": 31,
+            "responseTime": 182,
+            "throughput": 12.5,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 32,
+            "responseTime": 180,
+            "throughput": 12.6,
+            "errorRate": 49.75,
+            "activeUsers": 10
+          },
+          {
+            "time": 33,
+            "responseTime": 180,
+            "throughput": 12.7,
+            "errorRate": 49.76,
+            "activeUsers": 10
+          },
+          {
+            "time": 34,
+            "responseTime": 184,
+            "throughput": 12.6,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 35,
+            "responseTime": 184,
+            "throughput": 12.8,
+            "errorRate": 49.89,
+            "activeUsers": 10
+          },
+          {
+            "time": 36,
+            "responseTime": 185,
+            "throughput": 12.8,
+            "errorRate": 49.78,
+            "activeUsers": 10
+          },
+          {
+            "time": 37,
+            "responseTime": 185,
+            "throughput": 12.8,
+            "errorRate": 49.58,
+            "activeUsers": 10
+          },
+          {
+            "time": 38,
+            "responseTime": 180,
+            "throughput": 12.9,
+            "errorRate": 49.9,
+            "activeUsers": 10
+          },
+          {
+            "time": 39,
+            "responseTime": 179,
+            "throughput": 13,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 40,
+            "responseTime": 178,
+            "throughput": 13,
+            "errorRate": 49.71,
+            "activeUsers": 10
+          },
+          {
+            "time": 41,
+            "responseTime": 180,
+            "throughput": 13,
+            "errorRate": 49.63,
+            "activeUsers": 10
+          },
+          {
+            "time": 42,
+            "responseTime": 185,
+            "throughput": 13,
+            "errorRate": 49.91,
+            "activeUsers": 10
+          },
+          {
+            "time": 43,
+            "responseTime": 185,
+            "throughput": 13.1,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 44,
+            "responseTime": 184,
+            "throughput": 13.1,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 45,
+            "responseTime": 182,
+            "throughput": 13.2,
+            "errorRate": 49.75,
+            "activeUsers": 10
+          },
+          {
+            "time": 46,
+            "responseTime": 178,
+            "throughput": 13.2,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 47,
+            "responseTime": 178,
+            "throughput": 13.3,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 48,
+            "responseTime": 182,
+            "throughput": 13.3,
+            "errorRate": 49.92,
+            "activeUsers": 10
+          },
+          {
+            "time": 49,
+            "responseTime": 184,
+            "throughput": 13.3,
+            "errorRate": 49.77,
+            "activeUsers": 10
+          },
+          {
+            "time": 50,
+            "responseTime": 187,
+            "throughput": 13.3,
+            "errorRate": 49.92,
+            "activeUsers": 10
+          },
+          {
+            "time": 51,
+            "responseTime": 186,
+            "throughput": 13.4,
+            "errorRate": 49.93,
+            "activeUsers": 10
+          },
+          {
+            "time": 52,
+            "responseTime": 187,
+            "throughput": 13.4,
+            "errorRate": 49.93,
+            "activeUsers": 10
+          },
+          {
+            "time": 53,
+            "responseTime": 184,
+            "throughput": 13.4,
+            "errorRate": 49.79,
+            "activeUsers": 10
+          },
+          {
+            "time": 54,
+            "responseTime": 187,
+            "throughput": 13.4,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 55,
+            "responseTime": 186,
+            "throughput": 13.5,
+            "errorRate": 49.86,
+            "activeUsers": 10
+          },
+          {
+            "time": 56,
+            "responseTime": 184,
+            "throughput": 13.5,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 57,
+            "responseTime": 181,
+            "throughput": 13.5,
+            "errorRate": 49.74,
+            "activeUsers": 10
+          },
+          {
+            "time": 58,
+            "responseTime": 182,
+            "throughput": 13.5,
+            "errorRate": 49.94,
+            "activeUsers": 10
+          },
+          {
+            "time": 59,
+            "responseTime": 192,
+            "throughput": 13.5,
+            "errorRate": 49.87,
+            "activeUsers": 10
+          },
+          {
+            "time": 60,
+            "responseTime": 194,
+            "throughput": 13.4,
+            "errorRate": 50,
+            "activeUsers": 10
+          },
+          {
+            "time": 60,
+            "responseTime": 194,
+            "throughput": 13.4,
+            "errorRate": 50,
+            "activeUsers": 2
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "POST",
+            "endpoint": "/ps?client=1.1.18662.970",
+            "fullUrl": "https://gs-betway.insvr.com/ps?client=1.1.18662.970",
+            "category": "Game Engine - Auto Spin",
+            "description": "POST auto-spin request - Wealth Inn (R1.60/spin, 8 lines, base mode)",
+            "params": [
+              {
+                "name": "client",
+                "value": "1.1.18662.970"
+              }
+            ],
+            "body": {
+              "game": {
+                "action": "game",
+                "sessionid": "1d7436fd-3e51-4bb9-8683-2a9a6b814dd2",
+                "brandgameid": "16432539-69d8-44f9-b48a-791ef9380952",
+                "kn": "SGWealthInn"
+              },
+              "portmessage": "{\"coinValue\":0.2,\"betLevel\":1,\"numLines\":8,\"gameMode\":\"base\",\"pssid\":\"\"}",
+              "header": {
+                "player": {
+                  "ssotoken": "ps-80875b81105504a541148c45a79e1003698071yvakcxo",
+                  "funmode": false,
+                  "brandid": "66f160ed-7697-eb11-b566-501ac5016c00",
+                  "lc": "en",
+                  "mobile": false
+                },
+                "version": "1.1.18662.970"
+              },
+              "grid": "a2940c9a-ca4d-4e00-a231-70131c951bb9"
+            },
+            "requests": 804,
+            "avgTime": 217,
+            "p95Time": 270,
+            "errors": 0,
+            "status": "healthy",
+            "errorDetails": []
+          },
+          {
+            "id": 2,
+            "method": "GET",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "fullUrl": "https://casinoapi.betwayafrica.com/api/v3/Gaming/Game/wealth-inn/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+            "category": "Game Launch",
+            "description": "GET game launch params (brandgameid, buildertype)",
+            "requests": 803,
+            "avgTime": 169,
+            "p95Time": 181,
+            "errors": 803,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 50% exceeds acceptable threshold of 5%. Server may be overwhelmed under 10 concurrent users.",
+            "severity": "high",
+            "metric": "803 of 1606 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "description": "GET /api/v3/Gaming/Game/wealth-inn/alias has 803 errors out of 803 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 240,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 200,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 160,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 120,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 80,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T21:51:17.815Z"
+    },
+    {
+      "id": "lt-1769808216683",
+      "name": "Wealth Inn - Habanero Game Detail",
+      "targetUrl": "https://casinoapi.betwayafrica.com",
+      "startTime": "2026-01-30T21:23:36.711Z",
+      "endTime": "2026-01-30T21:24:37.980Z",
+      "duration": 61,
+      "config": {
+        "virtualUsers": 1,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Wealth Inn - Habanero Game Detail"
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 222,
+        "throughput": 1.7,
+        "errorRate": 101.02
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 98,
+          "successfulRequests": -1,
+          "failedRequests": 99,
+          "avgResponseTime": 222,
+          "p95ResponseTime": 281,
+          "p99ResponseTime": 1042,
+          "throughput": 1.7,
+          "errorRate": 101.02,
+          "peakVUs": 1,
+          "duration": 59
+        },
+        "timeline": [
+          {
+            "time": 2,
+            "responseTime": 636,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 3,
+            "responseTime": 636,
+            "throughput": 0.7,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 3,
+            "responseTime": 500,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 4,
+            "responseTime": 432,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 5,
+            "responseTime": 382,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 6,
+            "responseTime": 365,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 8,
+            "responseTime": 340,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 9,
+            "responseTime": 321,
+            "throughput": 0.8,
+            "errorRate": 114.29,
+            "activeUsers": 1
+          },
+          {
+            "time": 10,
+            "responseTime": 306,
+            "throughput": 0.8,
+            "errorRate": 112.5,
+            "activeUsers": 1
+          },
+          {
+            "time": 10,
+            "responseTime": 293,
+            "throughput": 0.9,
+            "errorRate": 111.11,
+            "activeUsers": 1
+          },
+          {
+            "time": 11,
+            "responseTime": 287,
+            "throughput": 0.9,
+            "errorRate": 110,
+            "activeUsers": 1
+          },
+          {
+            "time": 12,
+            "responseTime": 278,
+            "throughput": 0.9,
+            "errorRate": 109.09,
+            "activeUsers": 1
+          },
+          {
+            "time": 14,
+            "responseTime": 271,
+            "throughput": 0.9,
+            "errorRate": 108.33,
+            "activeUsers": 1
+          },
+          {
+            "time": 15,
+            "responseTime": 264,
+            "throughput": 0.9,
+            "errorRate": 107.69,
+            "activeUsers": 1
+          },
+          {
+            "time": 15,
+            "responseTime": 264,
+            "throughput": 0.9,
+            "errorRate": 107.69,
+            "activeUsers": 1
+          },
+          {
+            "time": 16,
+            "responseTime": 259,
+            "throughput": 0.9,
+            "errorRate": 107.14,
+            "activeUsers": 1
+          },
+          {
+            "time": 17,
+            "responseTime": 254,
+            "throughput": 0.9,
+            "errorRate": 106.67,
+            "activeUsers": 1
+          },
+          {
+            "time": 18,
+            "responseTime": 251,
+            "throughput": 0.9,
+            "errorRate": 106.25,
+            "activeUsers": 1
+          },
+          {
+            "time": 20,
+            "responseTime": 247,
+            "throughput": 0.8,
+            "errorRate": 105.88,
+            "activeUsers": 1
+          },
+          {
+            "time": 21,
+            "responseTime": 244,
+            "throughput": 0.9,
+            "errorRate": 105.56,
+            "activeUsers": 1
+          },
+          {
+            "time": 22,
+            "responseTime": 244,
+            "throughput": 0.8,
+            "errorRate": 105.56,
+            "activeUsers": 1
+          },
+          {
+            "time": 22,
+            "responseTime": 241,
+            "throughput": 0.9,
+            "errorRate": 105.26,
+            "activeUsers": 1
+          },
+          {
+            "time": 23,
+            "responseTime": 238,
+            "throughput": 0.9,
+            "errorRate": 105,
+            "activeUsers": 1
+          },
+          {
+            "time": 24,
+            "responseTime": 236,
+            "throughput": 0.9,
+            "errorRate": 104.76,
+            "activeUsers": 1
+          },
+          {
+            "time": 26,
+            "responseTime": 237,
+            "throughput": 0.8,
+            "errorRate": 104.55,
+            "activeUsers": 1
+          },
+          {
+            "time": 27,
+            "responseTime": 237,
+            "throughput": 0.8,
+            "errorRate": 104.55,
+            "activeUsers": 1
+          },
+          {
+            "time": 27,
+            "responseTime": 256,
+            "throughput": 0.9,
+            "errorRate": 104.35,
+            "activeUsers": 1
+          },
+          {
+            "time": 28,
+            "responseTime": 253,
+            "throughput": 0.9,
+            "errorRate": 104.17,
+            "activeUsers": 1
+          },
+          {
+            "time": 30,
+            "responseTime": 254,
+            "throughput": 0.8,
+            "errorRate": 104,
+            "activeUsers": 1
+          },
+          {
+            "time": 31,
+            "responseTime": 254,
+            "throughput": 0.8,
+            "errorRate": 104,
+            "activeUsers": 1
+          },
+          {
+            "time": 31,
+            "responseTime": 251,
+            "throughput": 0.8,
+            "errorRate": 103.85,
+            "activeUsers": 1
+          },
+          {
+            "time": 32,
+            "responseTime": 249,
+            "throughput": 0.8,
+            "errorRate": 103.7,
+            "activeUsers": 1
+          },
+          {
+            "time": 33,
+            "responseTime": 247,
+            "throughput": 0.8,
+            "errorRate": 103.57,
+            "activeUsers": 1
+          },
+          {
+            "time": 34,
+            "responseTime": 244,
+            "throughput": 0.9,
+            "errorRate": 103.45,
+            "activeUsers": 1
+          },
+          {
+            "time": 36,
+            "responseTime": 245,
+            "throughput": 0.8,
+            "errorRate": 103.33,
+            "activeUsers": 1
+          },
+          {
+            "time": 37,
+            "responseTime": 245,
+            "throughput": 0.8,
+            "errorRate": 103.33,
+            "activeUsers": 1
+          },
+          {
+            "time": 37,
+            "responseTime": 243,
+            "throughput": 0.8,
+            "errorRate": 103.23,
+            "activeUsers": 1
+          },
+          {
+            "time": 38,
+            "responseTime": 242,
+            "throughput": 0.8,
+            "errorRate": 103.13,
+            "activeUsers": 1
+          },
+          {
+            "time": 39,
+            "responseTime": 240,
+            "throughput": 0.8,
+            "errorRate": 103.03,
+            "activeUsers": 1
+          },
+          {
+            "time": 40,
+            "responseTime": 238,
+            "throughput": 0.8,
+            "errorRate": 102.94,
+            "activeUsers": 1
+          },
+          {
+            "time": 42,
+            "responseTime": 237,
+            "throughput": 0.8,
+            "errorRate": 102.86,
+            "activeUsers": 1
+          },
+          {
+            "time": 43,
+            "responseTime": 235,
+            "throughput": 0.8,
+            "errorRate": 102.78,
+            "activeUsers": 1
+          },
+          {
+            "time": 43,
+            "responseTime": 235,
+            "throughput": 0.8,
+            "errorRate": 102.78,
+            "activeUsers": 1
+          },
+          {
+            "time": 44,
+            "responseTime": 234,
+            "throughput": 0.8,
+            "errorRate": 102.7,
+            "activeUsers": 1
+          },
+          {
+            "time": 45,
+            "responseTime": 232,
+            "throughput": 0.8,
+            "errorRate": 102.63,
+            "activeUsers": 1
+          },
+          {
+            "time": 46,
+            "responseTime": 231,
+            "throughput": 0.8,
+            "errorRate": 102.56,
+            "activeUsers": 1
+          },
+          {
+            "time": 48,
+            "responseTime": 230,
+            "throughput": 0.8,
+            "errorRate": 102.5,
+            "activeUsers": 1
+          },
+          {
+            "time": 49,
+            "responseTime": 229,
+            "throughput": 0.8,
+            "errorRate": 102.44,
+            "activeUsers": 1
+          },
+          {
+            "time": 50,
+            "responseTime": 229,
+            "throughput": 0.8,
+            "errorRate": 102.44,
+            "activeUsers": 1
+          },
+          {
+            "time": 50,
+            "responseTime": 228,
+            "throughput": 0.8,
+            "errorRate": 102.38,
+            "activeUsers": 1
+          },
+          {
+            "time": 51,
+            "responseTime": 227,
+            "throughput": 0.8,
+            "errorRate": 102.33,
+            "activeUsers": 1
+          },
+          {
+            "time": 52,
+            "responseTime": 226,
+            "throughput": 0.8,
+            "errorRate": 102.27,
+            "activeUsers": 1
+          },
+          {
+            "time": 53,
+            "responseTime": 225,
+            "throughput": 0.8,
+            "errorRate": 102.22,
+            "activeUsers": 1
+          },
+          {
+            "time": 55,
+            "responseTime": 224,
+            "throughput": 0.8,
+            "errorRate": 102.17,
+            "activeUsers": 1
+          },
+          {
+            "time": 56,
+            "responseTime": 223,
+            "throughput": 0.8,
+            "errorRate": 102.13,
+            "activeUsers": 1
+          },
+          {
+            "time": 56,
+            "responseTime": 223,
+            "throughput": 0.8,
+            "errorRate": 102.13,
+            "activeUsers": 1
+          },
+          {
+            "time": 57,
+            "responseTime": 222,
+            "throughput": 0.8,
+            "errorRate": 102.08,
+            "activeUsers": 1
+          },
+          {
+            "time": 58,
+            "responseTime": 222,
+            "throughput": 0.8,
+            "errorRate": 102.04,
+            "activeUsers": 1
+          },
+          {
+            "time": 59,
+            "responseTime": 222,
+            "throughput": 0.8,
+            "errorRate": 102.04,
+            "activeUsers": 1
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "GET",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "fullUrl": "https://casinoapi.betwayafrica.com/api/v3/Gaming/Game/wealth-inn/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+            "category": "Gaming",
+            "description": "GET game details for Wealth Inn (Habanero)",
+            "params": [
+              {
+                "name": "regionCode",
+                "value": "ZA"
+              },
+              {
+                "name": "channel",
+                "value": "WebDesktop"
+              },
+              {
+                "name": "vertical",
+                "value": "casino-games"
+              },
+              {
+                "name": "languageCode",
+                "value": "en-US"
+              },
+              {
+                "name": "currency",
+                "value": "ZAR"
+              },
+              {
+                "name": "version",
+                "value": "0"
+              },
+              {
+                "name": "environment",
+                "value": "Production"
+              }
+            ],
+            "requests": 99,
+            "avgTime": 222,
+            "p95Time": 281,
+            "errors": 99,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 101.02% exceeds acceptable threshold of 5%. Server may be overwhelmed under 1 concurrent users.",
+            "severity": "high",
+            "metric": "99 of 98 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "description": "GET /api/v3/Gaming/Game/wealth-inn/alias has 99 errors out of 99 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 29,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 24,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 19,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 14,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 9,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T21:24:37.982Z"
+    },
+    {
+      "id": "lt-1769808078887",
+      "name": "Wealth Inn - Habanero Game Detail",
+      "targetUrl": "https://casinoapi.betwayafrica.com",
+      "startTime": "2026-01-30T21:21:18.911Z",
+      "endTime": "2026-01-30T21:22:20.977Z",
+      "duration": 62,
+      "config": {
+        "virtualUsers": 1,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Wealth Inn - Habanero Game Detail"
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 216,
+        "throughput": 1.7,
+        "errorRate": 100
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 100,
+          "successfulRequests": 0,
+          "failedRequests": 100,
+          "avgResponseTime": 216,
+          "p95ResponseTime": 278,
+          "p99ResponseTime": 1043,
+          "throughput": 1.7,
+          "errorRate": 100,
+          "peakVUs": 1,
+          "duration": 60
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 230,
+            "throughput": 2,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 2,
+            "responseTime": 229,
+            "throughput": 1.5,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 3,
+            "responseTime": 229,
+            "throughput": 1.3,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 4,
+            "responseTime": 220,
+            "throughput": 1.3,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 6,
+            "responseTime": 215,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 7,
+            "responseTime": 215,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 7,
+            "responseTime": 218,
+            "throughput": 1,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 8,
+            "responseTime": 218,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 10,
+            "responseTime": 321,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 10,
+            "responseTime": 307,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 11,
+            "responseTime": 298,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 12,
+            "responseTime": 289,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 14,
+            "responseTime": 280,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 15,
+            "responseTime": 274,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 16,
+            "responseTime": 274,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 16,
+            "responseTime": 267,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 17,
+            "responseTime": 268,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 19,
+            "responseTime": 263,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 20,
+            "responseTime": 261,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 21,
+            "responseTime": 261,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 21,
+            "responseTime": 257,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 22,
+            "responseTime": 253,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 23,
+            "responseTime": 250,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 24,
+            "responseTime": 246,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 26,
+            "responseTime": 243,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 27,
+            "responseTime": 241,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 28,
+            "responseTime": 241,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 28,
+            "responseTime": 238,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 29,
+            "responseTime": 236,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 30,
+            "responseTime": 234,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 32,
+            "responseTime": 232,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 33,
+            "responseTime": 230,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 34,
+            "responseTime": 230,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 34,
+            "responseTime": 229,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 35,
+            "responseTime": 227,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 36,
+            "responseTime": 226,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 38,
+            "responseTime": 226,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 39,
+            "responseTime": 225,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 40,
+            "responseTime": 224,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 41,
+            "responseTime": 224,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 41,
+            "responseTime": 223,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 42,
+            "responseTime": 221,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 43,
+            "responseTime": 220,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 45,
+            "responseTime": 219,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 46,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 47,
+            "responseTime": 218,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 48,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 48,
+            "responseTime": 218,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 49,
+            "responseTime": 217,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 51,
+            "responseTime": 219,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 52,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 53,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 54,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 54,
+            "responseTime": 217,
+            "throughput": 0.9,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 56,
+            "responseTime": 218,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 57,
+            "responseTime": 217,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 58,
+            "responseTime": 217,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 59,
+            "responseTime": 216,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          },
+          {
+            "time": 60,
+            "responseTime": 216,
+            "throughput": 0.8,
+            "errorRate": 100,
+            "activeUsers": 1
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "GET",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "fullUrl": "https://casinoapi.betwayafrica.com/api/v3/Gaming/Game/wealth-inn/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+            "category": "Gaming",
+            "description": "GET game details for Wealth Inn (Habanero)",
+            "params": [
+              {
+                "name": "regionCode",
+                "value": "ZA"
+              },
+              {
+                "name": "channel",
+                "value": "WebDesktop"
+              },
+              {
+                "name": "vertical",
+                "value": "casino-games"
+              },
+              {
+                "name": "languageCode",
+                "value": "en-US"
+              },
+              {
+                "name": "currency",
+                "value": "ZAR"
+              },
+              {
+                "name": "version",
+                "value": "0"
+              },
+              {
+                "name": "environment",
+                "value": "Production"
+              }
+            ],
+            "requests": 100,
+            "avgTime": 216,
+            "p95Time": 278,
+            "errors": 100,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 100% exceeds acceptable threshold of 5%. Server may be overwhelmed under 1 concurrent users.",
+            "severity": "high",
+            "metric": "100 of 100 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn/alias",
+            "description": "GET /api/v3/Gaming/Game/wealth-inn/alias has 100 errors out of 100 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 30,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 25,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 20,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 15,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 10,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T21:22:20.979Z"
+    },
+    {
+      "id": "lt-1769806636864",
+      "name": "Betway Casino Games Config",
+      "targetUrl": "https://casinoapic.betwayafrica.com",
+      "startTime": "2026-01-30T20:57:16.892Z",
+      "endTime": "2026-01-30T20:58:19.781Z",
+      "duration": 62,
+      "config": {
+        "virtualUsers": 50,
+        "duration": 60,
+        "rampUpTime": 10,
+        "testName": "Betway Casino Games Config"
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v4/Gaming/Game/Categories"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 517,
+        "throughput": 61.7,
+        "errorRate": 100
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 3702,
+          "successfulRequests": 0,
+          "failedRequests": 3702,
+          "avgResponseTime": 517,
+          "p95ResponseTime": 888,
+          "p99ResponseTime": 1544,
+          "throughput": 61.7,
+          "errorRate": 100,
+          "peakVUs": 50,
+          "duration": 60
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 958,
+            "throughput": 6,
+            "errorRate": 100,
+            "activeUsers": 10
+          },
+          {
+            "time": 2,
+            "responseTime": 1176,
+            "throughput": 7,
+            "errorRate": 100,
+            "activeUsers": 15
+          },
+          {
+            "time": 3,
+            "responseTime": 983,
+            "throughput": 8.7,
+            "errorRate": 100,
+            "activeUsers": 20
+          },
+          {
+            "time": 4,
+            "responseTime": 904,
+            "throughput": 10.8,
+            "errorRate": 100,
+            "activeUsers": 25
+          },
+          {
+            "time": 5,
+            "responseTime": 839,
+            "throughput": 11.6,
+            "errorRate": 100,
+            "activeUsers": 30
+          },
+          {
+            "time": 6,
+            "responseTime": 783,
+            "throughput": 14,
+            "errorRate": 100,
+            "activeUsers": 35
+          },
+          {
+            "time": 7,
+            "responseTime": 759,
+            "throughput": 15.4,
+            "errorRate": 100,
+            "activeUsers": 40
+          },
+          {
+            "time": 8,
+            "responseTime": 735,
+            "throughput": 17.1,
+            "errorRate": 100,
+            "activeUsers": 45
+          },
+          {
+            "time": 9,
+            "responseTime": 721,
+            "throughput": 17.9,
+            "errorRate": 100,
+            "activeUsers": 49
+          },
+          {
+            "time": 10,
+            "responseTime": 690,
+            "throughput": 19.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 11,
+            "responseTime": 642,
+            "throughput": 20.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 12,
+            "responseTime": 631,
+            "throughput": 21.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 13,
+            "responseTime": 614,
+            "throughput": 22.1,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 14,
+            "responseTime": 680,
+            "throughput": 22.4,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 15,
+            "responseTime": 688,
+            "throughput": 23,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 16,
+            "responseTime": 637,
+            "throughput": 23.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 17,
+            "responseTime": 593,
+            "throughput": 23.9,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 18,
+            "responseTime": 567,
+            "throughput": 24.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 19,
+            "responseTime": 519,
+            "throughput": 25.1,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 20,
+            "responseTime": 543,
+            "throughput": 25.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 21,
+            "responseTime": 506,
+            "throughput": 25.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 22,
+            "responseTime": 509,
+            "throughput": 26,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 23,
+            "responseTime": 509,
+            "throughput": 26.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 24,
+            "responseTime": 503,
+            "throughput": 26.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 25,
+            "responseTime": 499,
+            "throughput": 27,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 26,
+            "responseTime": 450,
+            "throughput": 27.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 27,
+            "responseTime": 417,
+            "throughput": 27.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 28,
+            "responseTime": 461,
+            "throughput": 27.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 29,
+            "responseTime": 514,
+            "throughput": 27.9,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 30,
+            "responseTime": 511,
+            "throughput": 28.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 31,
+            "responseTime": 472,
+            "throughput": 28.1,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 32,
+            "responseTime": 587,
+            "throughput": 28.4,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 33,
+            "responseTime": 605,
+            "throughput": 28.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 34,
+            "responseTime": 503,
+            "throughput": 28.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 35,
+            "responseTime": 433,
+            "throughput": 28.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 36,
+            "responseTime": 482,
+            "throughput": 28.9,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 38,
+            "responseTime": 422,
+            "throughput": 28.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 39,
+            "responseTime": 420,
+            "throughput": 28.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 40,
+            "responseTime": 424,
+            "throughput": 29.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 41,
+            "responseTime": 395,
+            "throughput": 29.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 42,
+            "responseTime": 399,
+            "throughput": 29.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 42,
+            "responseTime": 421,
+            "throughput": 30.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 44,
+            "responseTime": 398,
+            "throughput": 30.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 45,
+            "responseTime": 410,
+            "throughput": 30.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 46,
+            "responseTime": 421,
+            "throughput": 30.4,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 47,
+            "responseTime": 443,
+            "throughput": 30.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 48,
+            "responseTime": 345,
+            "throughput": 30.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 48,
+            "responseTime": 372,
+            "throughput": 31.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 49,
+            "responseTime": 366,
+            "throughput": 31.6,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 51,
+            "responseTime": 371,
+            "throughput": 30.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 51,
+            "responseTime": 465,
+            "throughput": 31.2,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 52,
+            "responseTime": 944,
+            "throughput": 31.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 53,
+            "responseTime": 609,
+            "throughput": 31.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 54,
+            "responseTime": 404,
+            "throughput": 31.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 55,
+            "responseTime": 375,
+            "throughput": 31.5,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 57,
+            "responseTime": 414,
+            "throughput": 31.1,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 57,
+            "responseTime": 357,
+            "throughput": 31.8,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 59,
+            "responseTime": 358,
+            "throughput": 31.3,
+            "errorRate": 100,
+            "activeUsers": 50
+          },
+          {
+            "time": 60,
+            "responseTime": 356,
+            "throughput": 31.1,
+            "errorRate": 100,
+            "activeUsers": 17
+          },
+          {
+            "time": 60,
+            "responseTime": 356,
+            "throughput": 31.1,
+            "errorRate": 100,
+            "activeUsers": 17
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "GET",
+            "endpoint": "/api/v4/Gaming/Game/Categories",
+            "fullUrl": "https://casinoapic.betwayafrica.com/api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0",
+            "category": "Gaming",
+            "params": [
+              {
+                "name": "channel",
+                "value": "WebDesktop"
+              },
+              {
+                "name": "count",
+                "value": "16"
+              },
+              {
+                "name": "gameCount",
+                "value": "16"
+              },
+              {
+                "name": "languageCode",
+                "value": "en-US"
+              },
+              {
+                "name": "currency",
+                "value": "ZAR"
+              },
+              {
+                "name": "environment",
+                "value": "Production"
+              },
+              {
+                "name": "regionCode",
+                "value": "ZA"
+              },
+              {
+                "name": "vertical",
+                "value": "casino-games"
+              },
+              {
+                "name": "appVersion",
+                "value": "0"
+              }
+            ],
+            "description": "GET /api/v4/Gaming/Game/Categories - Lists all games under each provider",
+            "requests": 3702,
+            "avgTime": 517,
+            "p95Time": 888,
+            "errors": 3702,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Response Time",
+            "endpoint": "Multiple endpoints",
+            "description": "Average response time of 517ms exceeds recommended threshold of 500ms under 50 concurrent users.",
+            "severity": "medium",
+            "metric": "Avg: 517ms, P95: 888ms",
+            "recommendation": "Optimize database queries, add caching, or scale horizontally"
+          },
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 100% exceeds acceptable threshold of 5%. Server may be overwhelmed under 50 concurrent users.",
+            "severity": "high",
+            "metric": "3702 of 3702 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v4/Gaming/Game/Categories",
+            "description": "GET /api/v4/Gaming/Game/Categories has 3702 errors out of 3702 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 1110,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 925,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 740,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 555,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 370,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T20:58:19.783Z"
+    },
+    {
+      "id": "lt-1769801733374",
+      "name": "Live Betting Stress Test (3000 VUs)",
+      "targetUrl": "https://mobi.betway.co.tz",
+      "startTime": "2026-01-30T19:35:33.400Z",
+      "endTime": "2026-01-30T19:35:37.967Z",
+      "duration": 4,
+      "config": {
+        "testName": "Live Betting Stress Test (3000 VUs)",
+        "testType": "single",
+        "virtualUsers": 3000,
+        "rampUpTime": 30,
+        "duration": 90,
+        "requestsPerSecond": 100,
+        "thinkTime": 1,
+        "environment": "dev",
+        "scheduleTest": false,
+        "scheduleTime": null
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/sports/live/events"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 323,
+        "throughput": 201,
+        "errorRate": 100
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 402,
+          "successfulRequests": 0,
+          "failedRequests": 402,
+          "avgResponseTime": 323,
+          "p95ResponseTime": 346,
+          "p99ResponseTime": 361,
+          "throughput": 201,
+          "errorRate": 100,
+          "peakVUs": 3000,
+          "duration": 2
+        },
+        "timeline": [],
+        "apiResults": [
+          {
+            "id": 301,
+            "method": "GET",
+            "endpoint": "/api/v1/sports/live/events",
+            "category": "Live & Play",
+            "auth": "None",
+            "params": [],
+            "description": "Get live events",
+            "requests": 402,
+            "avgTime": 323,
+            "p95Time": 346,
+            "errors": 402,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 100% exceeds acceptable threshold of 5%. Server may be overwhelmed under 3000 concurrent users.",
+            "severity": "high",
+            "metric": "402 of 402 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v1/sports/live/events",
+            "description": "GET /api/v1/sports/live/events has 402 errors out of 402 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 120,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 100,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 80,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 60,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 40,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T19:35:37.969Z"
+    },
+    {
+      "id": "lt-1769800816501",
+      "name": "Live Betting Stress Test (3000 VUs)",
+      "targetUrl": "https://mobi.betway.co.tz",
+      "startTime": "2026-01-30T19:20:16.529Z",
+      "endTime": "2026-01-30T19:22:21.847Z",
+      "duration": 125,
+      "config": {
+        "testName": "Live Betting Stress Test (3000 VUs)",
+        "testType": "single",
+        "virtualUsers": 3000,
+        "rampUpTime": 30,
+        "duration": 90,
+        "requestsPerSecond": 100,
+        "thinkTime": 1,
+        "environment": "dev",
+        "scheduleTest": false,
+        "scheduleTime": null
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/sports/live/events"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 1862,
+        "throughput": 872.7,
+        "errorRate": 100
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 103847,
+          "successfulRequests": 0,
+          "failedRequests": 103847,
+          "avgResponseTime": 1862,
+          "p95ResponseTime": 2767,
+          "p99ResponseTime": 3082,
+          "throughput": 872.7,
+          "errorRate": 100,
+          "peakVUs": 3000,
+          "duration": 119
+        },
+        "timeline": [
+          {
+            "time": 2,
+            "responseTime": 563,
+            "throughput": 12.5,
+            "errorRate": 100,
+            "activeUsers": 160
+          },
+          {
+            "time": 3,
+            "responseTime": 820,
+            "throughput": 44.7,
+            "errorRate": 100,
+            "activeUsers": 260
+          },
+          {
+            "time": 4,
+            "responseTime": 720,
+            "throughput": 70.8,
+            "errorRate": 100,
+            "activeUsers": 360
+          },
+          {
+            "time": 5,
+            "responseTime": 640,
+            "throughput": 105.6,
+            "errorRate": 100,
+            "activeUsers": 460
+          },
+          {
+            "time": 6,
+            "responseTime": 724,
+            "throughput": 140,
+            "errorRate": 100,
+            "activeUsers": 560
+          },
+          {
+            "time": 7,
+            "responseTime": 556,
+            "throughput": 173.3,
+            "errorRate": 100,
+            "activeUsers": 660
+          },
+          {
+            "time": 8,
+            "responseTime": 701,
+            "throughput": 211.1,
+            "errorRate": 100,
+            "activeUsers": 760
+          },
+          {
+            "time": 9,
+            "responseTime": 656,
+            "throughput": 243.4,
+            "errorRate": 100,
+            "activeUsers": 860
+          },
+          {
+            "time": 10,
+            "responseTime": 514,
+            "throughput": 272.3,
+            "errorRate": 100,
+            "activeUsers": 960
+          },
+          {
+            "time": 11,
+            "responseTime": 822,
+            "throughput": 292.4,
+            "errorRate": 100,
+            "activeUsers": 1060
+          },
+          {
+            "time": 12,
+            "responseTime": 991,
+            "throughput": 311.1,
+            "errorRate": 100,
+            "activeUsers": 1160
+          },
+          {
+            "time": 13,
+            "responseTime": 1069,
+            "throughput": 326.8,
+            "errorRate": 100,
+            "activeUsers": 1260
+          },
+          {
+            "time": 14,
+            "responseTime": 1334,
+            "throughput": 342.4,
+            "errorRate": 100,
+            "activeUsers": 1360
+          },
+          {
+            "time": 15,
+            "responseTime": 1400,
+            "throughput": 363.3,
+            "errorRate": 100,
+            "activeUsers": 1459
+          },
+          {
+            "time": 16,
+            "responseTime": 1817,
+            "throughput": 365.9,
+            "errorRate": 100,
+            "activeUsers": 1560
+          },
+          {
+            "time": 17,
+            "responseTime": 1784,
+            "throughput": 376.2,
+            "errorRate": 100,
+            "activeUsers": 1659
+          },
+          {
+            "time": 18,
+            "responseTime": 2005,
+            "throughput": 381.8,
+            "errorRate": 100,
+            "activeUsers": 1759
+          },
+          {
+            "time": 19,
+            "responseTime": 2115,
+            "throughput": 388.3,
+            "errorRate": 100,
+            "activeUsers": 1861
+          },
+          {
+            "time": 20,
+            "responseTime": 1987,
+            "throughput": 392.1,
+            "errorRate": 100,
+            "activeUsers": 1959
+          },
+          {
+            "time": 21,
+            "responseTime": 2360,
+            "throughput": 404.3,
+            "errorRate": 100,
+            "activeUsers": 2059
+          },
+          {
+            "time": 22,
+            "responseTime": 3001,
+            "throughput": 409.3,
+            "errorRate": 100,
+            "activeUsers": 2159
+          },
+          {
+            "time": 23,
+            "responseTime": 2639,
+            "throughput": 415,
+            "errorRate": 100,
+            "activeUsers": 2259
+          },
+          {
+            "time": 24,
+            "responseTime": 2518,
+            "throughput": 418.8,
+            "errorRate": 100,
+            "activeUsers": 2359
+          },
+          {
+            "time": 25,
+            "responseTime": 2057,
+            "throughput": 425.4,
+            "errorRate": 100,
+            "activeUsers": 2459
+          },
+          {
+            "time": 26,
+            "responseTime": 2251,
+            "throughput": 429.3,
+            "errorRate": 100,
+            "activeUsers": 2559
+          },
+          {
+            "time": 27,
+            "responseTime": 2699,
+            "throughput": 431.9,
+            "errorRate": 100,
+            "activeUsers": 2659
+          },
+          {
+            "time": 28,
+            "responseTime": 2386,
+            "throughput": 441.8,
+            "errorRate": 100,
+            "activeUsers": 2759
+          },
+          {
+            "time": 29,
+            "responseTime": 2128,
+            "throughput": 448.7,
+            "errorRate": 100,
+            "activeUsers": 2859
+          },
+          {
+            "time": 30,
+            "responseTime": 1961,
+            "throughput": 447.3,
+            "errorRate": 100,
+            "activeUsers": 2959
+          },
+          {
+            "time": 31,
+            "responseTime": 2354,
+            "throughput": 448.2,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 32,
+            "responseTime": 2612,
+            "throughput": 454.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 33,
+            "responseTime": 2717,
+            "throughput": 456.4,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 34,
+            "responseTime": 2498,
+            "throughput": 461.3,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 35,
+            "responseTime": 2423,
+            "throughput": 460.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 36,
+            "responseTime": 2632,
+            "throughput": 467.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 37,
+            "responseTime": 2462,
+            "throughput": 468.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 38,
+            "responseTime": 2445,
+            "throughput": 469.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 39,
+            "responseTime": 2429,
+            "throughput": 474.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 40,
+            "responseTime": 2395,
+            "throughput": 474,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 41,
+            "responseTime": 1576,
+            "throughput": 479.1,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 42,
+            "responseTime": 1163,
+            "throughput": 483.3,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 43,
+            "responseTime": 2212,
+            "throughput": 493.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 44,
+            "responseTime": 2385,
+            "throughput": 502.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 45,
+            "responseTime": 1421,
+            "throughput": 505.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 46,
+            "responseTime": 2415,
+            "throughput": 515,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 47,
+            "responseTime": 2294,
+            "throughput": 517.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 48,
+            "responseTime": 1870,
+            "throughput": 523.1,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 49,
+            "responseTime": 2262,
+            "throughput": 527.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 50,
+            "responseTime": 1925,
+            "throughput": 531.1,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 51,
+            "responseTime": 2139,
+            "throughput": 531.1,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 52,
+            "responseTime": 2497,
+            "throughput": 539.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 53,
+            "responseTime": 2561,
+            "throughput": 543.4,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 54,
+            "responseTime": 2352,
+            "throughput": 544,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 55,
+            "responseTime": 2316,
+            "throughput": 542.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 56,
+            "responseTime": 2780,
+            "throughput": 543.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 57,
+            "responseTime": 2448,
+            "throughput": 546.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 58,
+            "responseTime": 2149,
+            "throughput": 546.3,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 59,
+            "responseTime": 2201,
+            "throughput": 549.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 60,
+            "responseTime": 18333,
+            "throughput": 548.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 61,
+            "responseTime": 22005,
+            "throughput": 545.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 62,
+            "responseTime": 2629,
+            "throughput": 550.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 63,
+            "responseTime": 285,
+            "throughput": 554.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 64,
+            "responseTime": 619,
+            "throughput": 553.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 65,
+            "responseTime": 1544,
+            "throughput": 558.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 66,
+            "responseTime": 500,
+            "throughput": 563.3,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 67,
+            "responseTime": 565,
+            "throughput": 562.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 68,
+            "responseTime": 1241,
+            "throughput": 565,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 69,
+            "responseTime": 538,
+            "throughput": 570.2,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 70,
+            "responseTime": 327,
+            "throughput": 569.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 71,
+            "responseTime": 987,
+            "throughput": 571.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 72,
+            "responseTime": 322,
+            "throughput": 577.1,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 73,
+            "responseTime": 1100,
+            "throughput": 574.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 74,
+            "responseTime": 1347,
+            "throughput": 572.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 75,
+            "responseTime": 911,
+            "throughput": 575.2,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 76,
+            "responseTime": 877,
+            "throughput": 574.4,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 77,
+            "responseTime": 1184,
+            "throughput": 571.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 78,
+            "responseTime": 954,
+            "throughput": 574.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 79,
+            "responseTime": 711,
+            "throughput": 573.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 80,
+            "responseTime": 1186,
+            "throughput": 571.5,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 81,
+            "responseTime": 1165,
+            "throughput": 573.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 82,
+            "responseTime": 488,
+            "throughput": 574.7,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 83,
+            "responseTime": 1628,
+            "throughput": 571.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 84,
+            "responseTime": 1413,
+            "throughput": 570.4,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 85,
+            "responseTime": 583,
+            "throughput": 574.6,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 86,
+            "responseTime": 473,
+            "throughput": 572.4,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 87,
+            "responseTime": 946,
+            "throughput": 572.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 88,
+            "responseTime": 642,
+            "throughput": 575.9,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 89,
+            "responseTime": 1046,
+            "throughput": 575.8,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 90,
+            "responseTime": 1134,
+            "throughput": 576,
+            "errorRate": 100,
+            "activeUsers": 3000
+          },
+          {
+            "time": 91,
+            "responseTime": 1263,
+            "throughput": 576.3,
+            "errorRate": 100,
+            "activeUsers": 2659
+          },
+          {
+            "time": 92,
+            "responseTime": 596,
+            "throughput": 571,
+            "errorRate": 100,
+            "activeUsers": 2181
+          },
+          {
+            "time": 93,
+            "responseTime": 1282,
+            "throughput": 566.1,
+            "errorRate": 100,
+            "activeUsers": 1477
+          },
+          {
+            "time": 94,
+            "responseTime": 1313,
+            "throughput": 561.2,
+            "errorRate": 100,
+            "activeUsers": 1477
+          },
+          {
+            "time": 95,
+            "responseTime": 1987,
+            "throughput": 555.8,
+            "errorRate": 100,
+            "activeUsers": 1376
+          },
+          {
+            "time": 96,
+            "responseTime": 4041,
+            "throughput": 550.1,
+            "errorRate": 100,
+            "activeUsers": 1215
+          },
+          {
+            "time": 97,
+            "responseTime": 6880,
+            "throughput": 544.4,
+            "errorRate": 100,
+            "activeUsers": 1212
+          },
+          {
+            "time": 98,
+            "responseTime": 9046,
+            "throughput": 538.9,
+            "errorRate": 100,
+            "activeUsers": 1208
+          },
+          {
+            "time": 99,
+            "responseTime": 12772,
+            "throughput": 533.5,
+            "errorRate": 100,
+            "activeUsers": 1205
+          },
+          {
+            "time": 100,
+            "responseTime": 15069,
+            "throughput": 528.2,
+            "errorRate": 100,
+            "activeUsers": 1201
+          },
+          {
+            "time": 101,
+            "responseTime": 17438,
+            "throughput": 523,
+            "errorRate": 100,
+            "activeUsers": 1198
+          },
+          {
+            "time": 102,
+            "responseTime": 20681,
+            "throughput": 517.9,
+            "errorRate": 100,
+            "activeUsers": 1194
+          },
+          {
+            "time": 103,
+            "responseTime": 22323,
+            "throughput": 512.9,
+            "errorRate": 100,
+            "activeUsers": 1191
+          },
+          {
+            "time": 104,
+            "responseTime": 24211,
+            "throughput": 508,
+            "errorRate": 100,
+            "activeUsers": 1189
+          },
+          {
+            "time": 105,
+            "responseTime": 27658,
+            "throughput": 503.2,
+            "errorRate": 100,
+            "activeUsers": 1185
+          },
+          {
+            "time": 106,
+            "responseTime": 30341,
+            "throughput": 498.5,
+            "errorRate": 100,
+            "activeUsers": 1182
+          },
+          {
+            "time": 107,
+            "responseTime": 900,
+            "throughput": 494.7,
+            "errorRate": 100,
+            "activeUsers": 1179
+          },
+          {
+            "time": 108,
+            "responseTime": 1881,
+            "throughput": 491.1,
+            "errorRate": 100,
+            "activeUsers": 1104
+          },
+          {
+            "time": 109,
+            "responseTime": 1878,
+            "throughput": 487.5,
+            "errorRate": 100,
+            "activeUsers": 1001
+          },
+          {
+            "time": 110,
+            "responseTime": 1925,
+            "throughput": 484,
+            "errorRate": 100,
+            "activeUsers": 896
+          },
+          {
+            "time": 111,
+            "responseTime": 3916,
+            "throughput": 480,
+            "errorRate": 100,
+            "activeUsers": 791
+          },
+          {
+            "time": 112,
+            "responseTime": 6908,
+            "throughput": 475.7,
+            "errorRate": 100,
+            "activeUsers": 743
+          },
+          {
+            "time": 113,
+            "responseTime": 10975,
+            "throughput": 471.5,
+            "errorRate": 100,
+            "activeUsers": 740
+          },
+          {
+            "time": 114,
+            "responseTime": 14130,
+            "throughput": 467.4,
+            "errorRate": 100,
+            "activeUsers": 736
+          },
+          {
+            "time": 115,
+            "responseTime": 17453,
+            "throughput": 463.4,
+            "errorRate": 100,
+            "activeUsers": 733
+          },
+          {
+            "time": 116,
+            "responseTime": 20689,
+            "throughput": 459.4,
+            "errorRate": 100,
+            "activeUsers": 730
+          },
+          {
+            "time": 117,
+            "responseTime": 25092,
+            "throughput": 455.5,
+            "errorRate": 100,
+            "activeUsers": 726
+          },
+          {
+            "time": 118,
+            "responseTime": 28489,
+            "throughput": 451.7,
+            "errorRate": 100,
+            "activeUsers": 723
+          },
+          {
+            "time": 119,
+            "responseTime": 31920,
+            "throughput": 447.9,
+            "errorRate": 100,
+            "activeUsers": 720
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 301,
+            "method": "GET",
+            "endpoint": "/api/v1/sports/live/events",
+            "category": "Live & Play",
+            "auth": "None",
+            "params": [],
+            "description": "Get live events",
+            "requests": 103847,
+            "avgTime": 1862,
+            "p95Time": 2767,
+            "errors": 103847,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Response Time",
+            "endpoint": "Multiple endpoints",
+            "description": "Average response time of 1862ms exceeds recommended threshold of 500ms under 3000 concurrent users.",
+            "severity": "high",
+            "metric": "Avg: 1862ms, P95: 2767ms",
+            "recommendation": "Optimize database queries, add caching, or scale horizontally"
+          },
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 100% exceeds acceptable threshold of 5%. Server may be overwhelmed under 3000 concurrent users.",
+            "severity": "high",
+            "metric": "103847 of 103847 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v1/sports/live/events",
+            "description": "GET /api/v1/sports/live/events has 103847 errors out of 103847 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 31154,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 25961,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 20769,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 15577,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 10384,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T19:22:21.849Z"
+    },
+    {
+      "id": "lt-1769798357015",
+      "name": "Habanero Game Launch Flow - Wealth Inn",
+      "targetUrl": "https://info.betwayafrica.com",
+      "startTime": "2026-01-30T18:39:17.045Z",
+      "endTime": "2026-01-30T18:40:20.539Z",
+      "duration": 63,
+      "config": {
+        "testName": "Habanero Game Launch Flow - Wealth Inn",
+        "virtualUsers": 50,
+        "rampUpTime": 15,
+        "duration": 60,
+        "requestsPerSecond": 100,
+        "thinkTime": 1,
+        "loadProfile": "rampup",
+        "environment": "prod"
+      },
+      "selectedApis": [
+        {
+          "method": "GET",
+          "endpoint": "/api/v1.0/Origin/Tokens"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v3/Gaming/Game/wealth-inn-betway/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1.0/Origin/BannerTag?request.referringUrl=https://www.betway.co.za"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/requestInfo"
+        },
+        {
+          "method": "GET",
+          "endpoint": "/api/v1/Toast/ZA"
+        }
+      ],
+      "status": "failed",
+      "results": {
+        "avgTime": 172,
+        "throughput": 222.7,
+        "errorRate": 66.68
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 13586,
+          "successfulRequests": 4527,
+          "failedRequests": 9059,
+          "avgResponseTime": 172,
+          "p95ResponseTime": 275,
+          "p99ResponseTime": 328,
+          "throughput": 222.7,
+          "errorRate": 66.68,
+          "peakVUs": 50,
+          "duration": 61
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 252,
+            "throughput": 21,
+            "errorRate": 71.43,
+            "activeUsers": 7
+          },
+          {
+            "time": 2,
+            "responseTime": 277,
+            "throughput": 24,
+            "errorRate": 64.58,
+            "activeUsers": 10
+          },
+          {
+            "time": 3,
+            "responseTime": 219,
+            "throughput": 25.7,
+            "errorRate": 63.64,
+            "activeUsers": 13
+          },
+          {
+            "time": 4,
+            "responseTime": 195,
+            "throughput": 31.8,
+            "errorRate": 65.35,
+            "activeUsers": 17
+          },
+          {
+            "time": 5,
+            "responseTime": 223,
+            "throughput": 36.2,
+            "errorRate": 64.64,
+            "activeUsers": 20
+          },
+          {
+            "time": 6,
+            "responseTime": 186,
+            "throughput": 40.5,
+            "errorRate": 66.26,
+            "activeUsers": 23
+          },
+          {
+            "time": 7,
+            "responseTime": 182,
+            "throughput": 45.7,
+            "errorRate": 65.31,
+            "activeUsers": 26
+          },
+          {
+            "time": 8,
+            "responseTime": 172,
+            "throughput": 51,
+            "errorRate": 66.18,
+            "activeUsers": 30
+          },
+          {
+            "time": 9,
+            "responseTime": 168,
+            "throughput": 56.3,
+            "errorRate": 65.48,
+            "activeUsers": 33
+          },
+          {
+            "time": 10,
+            "responseTime": 179,
+            "throughput": 60.9,
+            "errorRate": 66.01,
+            "activeUsers": 36
+          },
+          {
+            "time": 11,
+            "responseTime": 176,
+            "throughput": 66.1,
+            "errorRate": 65.75,
+            "activeUsers": 39
+          },
+          {
+            "time": 12,
+            "responseTime": 177,
+            "throughput": 70.8,
+            "errorRate": 66,
+            "activeUsers": 43
+          },
+          {
+            "time": 13,
+            "responseTime": 209,
+            "throughput": 76.3,
+            "errorRate": 65.73,
+            "activeUsers": 46
+          },
+          {
+            "time": 14,
+            "responseTime": 178,
+            "throughput": 80.4,
+            "errorRate": 66.07,
+            "activeUsers": 49
+          },
+          {
+            "time": 16,
+            "responseTime": 186,
+            "throughput": 82.4,
+            "errorRate": 66.08,
+            "activeUsers": 50
+          },
+          {
+            "time": 17,
+            "responseTime": 187,
+            "throughput": 85.4,
+            "errorRate": 66.02,
+            "activeUsers": 50
+          },
+          {
+            "time": 18,
+            "responseTime": 185,
+            "throughput": 89.4,
+            "errorRate": 66.31,
+            "activeUsers": 50
+          },
+          {
+            "time": 19,
+            "responseTime": 173,
+            "throughput": 92.2,
+            "errorRate": 66.19,
+            "activeUsers": 50
+          },
+          {
+            "time": 20,
+            "responseTime": 191,
+            "throughput": 95.3,
+            "errorRate": 66.26,
+            "activeUsers": 50
+          },
+          {
+            "time": 21,
+            "responseTime": 172,
+            "throughput": 97.3,
+            "errorRate": 66.32,
+            "activeUsers": 50
+          },
+          {
+            "time": 22,
+            "responseTime": 180,
+            "throughput": 100.2,
+            "errorRate": 66.21,
+            "activeUsers": 50
+          },
+          {
+            "time": 23,
+            "responseTime": 183,
+            "throughput": 101.8,
+            "errorRate": 66.38,
+            "activeUsers": 50
+          },
+          {
+            "time": 24,
+            "responseTime": 170,
+            "throughput": 104.4,
+            "errorRate": 66.35,
+            "activeUsers": 50
+          },
+          {
+            "time": 25,
+            "responseTime": 190,
+            "throughput": 105.5,
+            "errorRate": 66.36,
+            "activeUsers": 50
+          },
+          {
+            "time": 26,
+            "responseTime": 173,
+            "throughput": 107.6,
+            "errorRate": 66.4,
+            "activeUsers": 50
+          },
+          {
+            "time": 27,
+            "responseTime": 179,
+            "throughput": 108.5,
+            "errorRate": 66.38,
+            "activeUsers": 50
+          },
+          {
+            "time": 28,
+            "responseTime": 181,
+            "throughput": 110.7,
+            "errorRate": 66.42,
+            "activeUsers": 50
+          },
+          {
+            "time": 29,
+            "responseTime": 183,
+            "throughput": 111.1,
+            "errorRate": 66.49,
+            "activeUsers": 50
+          },
+          {
+            "time": 30,
+            "responseTime": 175,
+            "throughput": 113,
+            "errorRate": 66.47,
+            "activeUsers": 50
+          },
+          {
+            "time": 31,
+            "responseTime": 170,
+            "throughput": 113.7,
+            "errorRate": 66.47,
+            "activeUsers": 50
+          },
+          {
+            "time": 32,
+            "responseTime": 184,
+            "throughput": 115.2,
+            "errorRate": 66.51,
+            "activeUsers": 50
+          },
+          {
+            "time": 33,
+            "responseTime": 166,
+            "throughput": 115.8,
+            "errorRate": 66.52,
+            "activeUsers": 50
+          },
+          {
+            "time": 34,
+            "responseTime": 170,
+            "throughput": 117.2,
+            "errorRate": 66.53,
+            "activeUsers": 50
+          },
+          {
+            "time": 35,
+            "responseTime": 174,
+            "throughput": 117.9,
+            "errorRate": 66.55,
+            "activeUsers": 50
+          },
+          {
+            "time": 36,
+            "responseTime": 156,
+            "throughput": 119,
+            "errorRate": 66.52,
+            "activeUsers": 50
+          },
+          {
+            "time": 37,
+            "responseTime": 176,
+            "throughput": 119.6,
+            "errorRate": 66.55,
+            "activeUsers": 50
+          },
+          {
+            "time": 38,
+            "responseTime": 157,
+            "throughput": 120.6,
+            "errorRate": 66.48,
+            "activeUsers": 50
+          },
+          {
+            "time": 39,
+            "responseTime": 183,
+            "throughput": 120.9,
+            "errorRate": 66.53,
+            "activeUsers": 50
+          },
+          {
+            "time": 40,
+            "responseTime": 159,
+            "throughput": 122,
+            "errorRate": 66.51,
+            "activeUsers": 50
+          },
+          {
+            "time": 41,
+            "responseTime": 175,
+            "throughput": 122.5,
+            "errorRate": 66.54,
+            "activeUsers": 50
+          },
+          {
+            "time": 42,
+            "responseTime": 163,
+            "throughput": 123.2,
+            "errorRate": 66.5,
+            "activeUsers": 50
+          },
+          {
+            "time": 43,
+            "responseTime": 162,
+            "throughput": 123.7,
+            "errorRate": 66.55,
+            "activeUsers": 50
+          },
+          {
+            "time": 44,
+            "responseTime": 164,
+            "throughput": 124.2,
+            "errorRate": 66.54,
+            "activeUsers": 50
+          },
+          {
+            "time": 45,
+            "responseTime": 169,
+            "throughput": 124.7,
+            "errorRate": 66.54,
+            "activeUsers": 50
+          },
+          {
+            "time": 46,
+            "responseTime": 162,
+            "throughput": 125.1,
+            "errorRate": 66.49,
+            "activeUsers": 49
+          },
+          {
+            "time": 47,
+            "responseTime": 171,
+            "throughput": 125.4,
+            "errorRate": 66.55,
+            "activeUsers": 46
+          },
+          {
+            "time": 48,
+            "responseTime": 168,
+            "throughput": 125.3,
+            "errorRate": 66.5,
+            "activeUsers": 42
+          },
+          {
+            "time": 49,
+            "responseTime": 168,
+            "throughput": 125.4,
+            "errorRate": 66.59,
+            "activeUsers": 42
+          },
+          {
+            "time": 50,
+            "responseTime": 192,
+            "throughput": 124.9,
+            "errorRate": 66.56,
+            "activeUsers": 39
+          },
+          {
+            "time": 51,
+            "responseTime": 175,
+            "throughput": 124.8,
+            "errorRate": 66.6,
+            "activeUsers": 35
+          },
+          {
+            "time": 52,
+            "responseTime": 181,
+            "throughput": 123.7,
+            "errorRate": 66.61,
+            "activeUsers": 31
+          },
+          {
+            "time": 53,
+            "responseTime": 163,
+            "throughput": 123,
+            "errorRate": 66.63,
+            "activeUsers": 25
+          },
+          {
+            "time": 54,
+            "responseTime": 175,
+            "throughput": 121.8,
+            "errorRate": 66.61,
+            "activeUsers": 24
+          },
+          {
+            "time": 55,
+            "responseTime": 171,
+            "throughput": 121,
+            "errorRate": 66.67,
+            "activeUsers": 21
+          },
+          {
+            "time": 56,
+            "responseTime": 176,
+            "throughput": 119.5,
+            "errorRate": 66.62,
+            "activeUsers": 16
+          },
+          {
+            "time": 57,
+            "responseTime": 160,
+            "throughput": 118.5,
+            "errorRate": 66.65,
+            "activeUsers": 14
+          },
+          {
+            "time": 58,
+            "responseTime": 167,
+            "throughput": 116.8,
+            "errorRate": 66.62,
+            "activeUsers": 12
+          },
+          {
+            "time": 59,
+            "responseTime": 170,
+            "throughput": 115.2,
+            "errorRate": 66.66,
+            "activeUsers": 6
+          },
+          {
+            "time": 60,
+            "responseTime": 165,
+            "throughput": 113.3,
+            "errorRate": 66.65,
+            "activeUsers": 4
+          },
+          {
+            "time": 60,
+            "responseTime": 169,
+            "throughput": 113.3,
+            "errorRate": 66.66,
+            "activeUsers": 1
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 1,
+            "method": "GET",
+            "endpoint": "/api/v1.0/Origin/Tokens",
+            "description": "Retrieve authentication tokens",
+            "category": "Authentication",
+            "requests": 2266,
+            "avgTime": 201,
+            "p95Time": 281,
+            "errors": 2,
+            "status": "healthy",
+            "errorDetails": []
+          },
+          {
+            "id": 2,
+            "method": "GET",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn-betway/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+            "description": "Game launch - resolve game alias",
+            "category": "Gaming",
+            "requests": 2264,
+            "avgTime": 200,
+            "p95Time": 275,
+            "errors": 2264,
+            "status": "degraded",
+            "errorDetails": []
+          },
+          {
+            "id": 3,
+            "method": "GET",
+            "endpoint": "/api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0",
+            "description": "Load game categories",
+            "category": "Gaming",
+            "requests": 2266,
+            "avgTime": 199,
+            "p95Time": 276,
+            "errors": 2266,
+            "status": "degraded",
+            "errorDetails": []
+          },
+          {
+            "id": 4,
+            "method": "GET",
+            "endpoint": "/api/v1.0/Origin/BannerTag?request.referringUrl=https://www.betway.co.za",
+            "description": "Load banner tags",
+            "category": "Content",
+            "requests": 2265,
+            "avgTime": 23,
+            "p95Time": 31,
+            "errors": 2,
+            "status": "healthy",
+            "errorDetails": []
+          },
+          {
+            "id": 5,
+            "method": "GET",
+            "endpoint": "/api/v1/requestInfo",
+            "description": "Request client info",
+            "category": "General",
+            "requests": 2262,
+            "avgTime": 205,
+            "p95Time": 278,
+            "errors": 2262,
+            "status": "degraded",
+            "errorDetails": []
+          },
+          {
+            "id": 6,
+            "method": "GET",
+            "endpoint": "/api/v1/Toast/ZA",
+            "description": "Load toast notifications",
+            "category": "General",
+            "requests": 2263,
+            "avgTime": 203,
+            "p95Time": 280,
+            "errors": 2263,
+            "status": "degraded",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [
+          {
+            "type": "High Error Rate",
+            "endpoint": "Multiple endpoints",
+            "description": "Error rate of 66.68% exceeds acceptable threshold of 5%. Server may be overwhelmed under 50 concurrent users.",
+            "severity": "high",
+            "metric": "9059 of 13586 requests failed",
+            "recommendation": "Check server logs, increase connection pool, add rate limiting"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v3/Gaming/Game/wealth-inn-betway/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production",
+            "description": "GET /api/v3/Gaming/Game/wealth-inn-betway/alias?regionCode=ZA&channel=WebDesktop&vertical=casino-games&languageCode=en-US&currency=ZAR&version=0&environment=Production has 2264 errors out of 2264 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0",
+            "description": "GET /api/v4/Gaming/Game/Categories?channel=WebDesktop&count=16&gameCount=16&languageCode=en-US&currency=ZAR&environment=Production&regionCode=ZA&vertical=casino-games&appVersion=0 has 2266 errors out of 2266 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v1/requestInfo",
+            "description": "GET /api/v1/requestInfo has 2262 errors out of 2262 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          },
+          {
+            "type": "Degraded Endpoint",
+            "endpoint": "/api/v1/Toast/ZA",
+            "description": "GET /api/v1/Toast/ZA has 2263 errors out of 2263 requests.",
+            "severity": "high",
+            "metric": "Error rate: 100.0%",
+            "recommendation": "Investigate endpoint-specific issues, check upstream dependencies"
+          }
+        ],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 2717,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 2264,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 1811,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 1358,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 905,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T18:40:20.542Z"
+    },
+    {
+      "id": "lt-1769788340760",
+      "name": "Load Test lt-1769788340760",
+      "targetUrl": "https://www.betway.co.za/lobby/casino-games",
+      "startTime": "2026-01-30T15:52:20.785Z",
+      "endTime": "2026-01-30T15:53:23.517Z",
+      "duration": 62,
+      "config": {
+        "testName": "",
+        "testType": "single",
+        "virtualUsers": 10,
+        "rampUpTime": 30,
+        "duration": 60,
+        "requestsPerSecond": 100,
+        "thinkTime": 1,
+        "environment": "dev",
+        "scheduleTest": false,
+        "scheduleTime": null
+      },
+      "selectedApis": [
+        {
+          "method": "POST",
+          "endpoint": "/api/v1/auth/login"
+        }
+      ],
+      "status": "completed",
+      "results": {
+        "avgTime": 476,
+        "throughput": 10,
+        "errorRate": 0.33
+      },
+      "fullResults": {
+        "summary": {
+          "totalRequests": 612,
+          "successfulRequests": 610,
+          "failedRequests": 2,
+          "avgResponseTime": 476,
+          "p95ResponseTime": 1004,
+          "p99ResponseTime": 2078,
+          "throughput": 10,
+          "errorRate": 0.33,
+          "peakVUs": 10,
+          "duration": 61
+        },
+        "timeline": [
+          {
+            "time": 1,
+            "responseTime": 628,
+            "throughput": 2,
+            "errorRate": 0,
+            "activeUsers": 1
+          },
+          {
+            "time": 2,
+            "responseTime": 628,
+            "throughput": 1,
+            "errorRate": 0,
+            "activeUsers": 1
+          },
+          {
+            "time": 3,
+            "responseTime": 516,
+            "throughput": 1,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 4,
+            "responseTime": 537,
+            "throughput": 1.3,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 6,
+            "responseTime": 466,
+            "throughput": 1.2,
+            "errorRate": 0,
+            "activeUsers": 2
+          },
+          {
+            "time": 7,
+            "responseTime": 466,
+            "throughput": 1,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 7,
+            "responseTime": 428,
+            "throughput": 1.3,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 8,
+            "responseTime": 423,
+            "throughput": 1.4,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 9,
+            "responseTime": 396,
+            "throughput": 1.6,
+            "errorRate": 0,
+            "activeUsers": 3
+          },
+          {
+            "time": 10,
+            "responseTime": 420,
+            "throughput": 1.6,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 11,
+            "responseTime": 405,
+            "throughput": 1.6,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 12,
+            "responseTime": 400,
+            "throughput": 1.8,
+            "errorRate": 0,
+            "activeUsers": 4
+          },
+          {
+            "time": 13,
+            "responseTime": 436,
+            "throughput": 2,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 14,
+            "responseTime": 426,
+            "throughput": 2,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 15,
+            "responseTime": 419,
+            "throughput": 2.1,
+            "errorRate": 0,
+            "activeUsers": 5
+          },
+          {
+            "time": 17,
+            "responseTime": 410,
+            "throughput": 2.2,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 18,
+            "responseTime": 417,
+            "throughput": 2.3,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 19,
+            "responseTime": 409,
+            "throughput": 2.4,
+            "errorRate": 0,
+            "activeUsers": 6
+          },
+          {
+            "time": 20,
+            "responseTime": 402,
+            "throughput": 2.6,
+            "errorRate": 1.92,
+            "activeUsers": 6
+          },
+          {
+            "time": 21,
+            "responseTime": 397,
+            "throughput": 2.7,
+            "errorRate": 1.75,
+            "activeUsers": 7
+          },
+          {
+            "time": 22,
+            "responseTime": 394,
+            "throughput": 2.7,
+            "errorRate": 1.67,
+            "activeUsers": 7
+          },
+          {
+            "time": 23,
+            "responseTime": 405,
+            "throughput": 2.9,
+            "errorRate": 1.52,
+            "activeUsers": 7
+          },
+          {
+            "time": 24,
+            "responseTime": 402,
+            "throughput": 3,
+            "errorRate": 1.37,
+            "activeUsers": 8
+          },
+          {
+            "time": 25,
+            "responseTime": 388,
+            "throughput": 3.1,
+            "errorRate": 1.28,
+            "activeUsers": 8
+          },
+          {
+            "time": 26,
+            "responseTime": 398,
+            "throughput": 3.2,
+            "errorRate": 1.19,
+            "activeUsers": 8
+          },
+          {
+            "time": 27,
+            "responseTime": 399,
+            "throughput": 3.3,
+            "errorRate": 1.11,
+            "activeUsers": 9
+          },
+          {
+            "time": 28,
+            "responseTime": 400,
+            "throughput": 3.4,
+            "errorRate": 1.06,
+            "activeUsers": 9
+          },
+          {
+            "time": 29,
+            "responseTime": 427,
+            "throughput": 3.4,
+            "errorRate": 1,
+            "activeUsers": 9
+          },
+          {
+            "time": 30,
+            "responseTime": 432,
+            "throughput": 3.6,
+            "errorRate": 0.93,
+            "activeUsers": 9
+          },
+          {
+            "time": 31,
+            "responseTime": 482,
+            "throughput": 3.7,
+            "errorRate": 0.87,
+            "activeUsers": 10
+          },
+          {
+            "time": 32,
+            "responseTime": 485,
+            "throughput": 3.8,
+            "errorRate": 0.82,
+            "activeUsers": 10
+          },
+          {
+            "time": 33,
+            "responseTime": 473,
+            "throughput": 3.9,
+            "errorRate": 0.77,
+            "activeUsers": 10
+          },
+          {
+            "time": 34,
+            "responseTime": 457,
+            "throughput": 4.1,
+            "errorRate": 0.72,
+            "activeUsers": 10
+          },
+          {
+            "time": 35,
+            "responseTime": 443,
+            "throughput": 4,
+            "errorRate": 0.71,
+            "activeUsers": 10
+          },
+          {
+            "time": 36,
+            "responseTime": 447,
+            "throughput": 4.2,
+            "errorRate": 0.66,
+            "activeUsers": 10
+          },
+          {
+            "time": 37,
+            "responseTime": 467,
+            "throughput": 4.2,
+            "errorRate": 0.64,
+            "activeUsers": 10
+          },
+          {
+            "time": 38,
+            "responseTime": 412,
+            "throughput": 4.3,
+            "errorRate": 0.61,
+            "activeUsers": 10
+          },
+          {
+            "time": 39,
+            "responseTime": 428,
+            "throughput": 4.4,
+            "errorRate": 0.58,
+            "activeUsers": 10
+          },
+          {
+            "time": 40,
+            "responseTime": 432,
+            "throughput": 4.4,
+            "errorRate": 0.57,
+            "activeUsers": 10
+          },
+          {
+            "time": 41,
+            "responseTime": 460,
+            "throughput": 4.4,
+            "errorRate": 0.55,
+            "activeUsers": 10
+          },
+          {
+            "time": 42,
+            "responseTime": 505,
+            "throughput": 4.5,
+            "errorRate": 0.53,
+            "activeUsers": 10
+          },
+          {
+            "time": 43,
+            "responseTime": 526,
+            "throughput": 4.6,
+            "errorRate": 0.51,
+            "activeUsers": 10
+          },
+          {
+            "time": 44,
+            "responseTime": 508,
+            "throughput": 4.6,
+            "errorRate": 0.49,
+            "activeUsers": 10
+          },
+          {
+            "time": 45,
+            "responseTime": 512,
+            "throughput": 4.7,
+            "errorRate": 0.48,
+            "activeUsers": 10
+          },
+          {
+            "time": 46,
+            "responseTime": 523,
+            "throughput": 4.7,
+            "errorRate": 0.46,
+            "activeUsers": 10
+          },
+          {
+            "time": 47,
+            "responseTime": 518,
+            "throughput": 4.7,
+            "errorRate": 0.45,
+            "activeUsers": 10
+          },
+          {
+            "time": 48,
+            "responseTime": 527,
+            "throughput": 4.8,
+            "errorRate": 0.43,
+            "activeUsers": 10
+          },
+          {
+            "time": 49,
+            "responseTime": 504,
+            "throughput": 4.9,
+            "errorRate": 0.42,
+            "activeUsers": 10
+          },
+          {
+            "time": 50,
+            "responseTime": 510,
+            "throughput": 4.9,
+            "errorRate": 0.41,
+            "activeUsers": 10
+          },
+          {
+            "time": 51,
+            "responseTime": 453,
+            "throughput": 4.9,
+            "errorRate": 0.4,
+            "activeUsers": 10
+          },
+          {
+            "time": 52,
+            "responseTime": 470,
+            "throughput": 4.9,
+            "errorRate": 0.39,
+            "activeUsers": 10
+          },
+          {
+            "time": 53,
+            "responseTime": 453,
+            "throughput": 5,
+            "errorRate": 0.38,
+            "activeUsers": 10
+          },
+          {
+            "time": 54,
+            "responseTime": 436,
+            "throughput": 5,
+            "errorRate": 0.37,
+            "activeUsers": 10
+          },
+          {
+            "time": 55,
+            "responseTime": 430,
+            "throughput": 5,
+            "errorRate": 0.36,
+            "activeUsers": 10
+          },
+          {
+            "time": 56,
+            "responseTime": 412,
+            "throughput": 5.1,
+            "errorRate": 0.35,
+            "activeUsers": 10
+          },
+          {
+            "time": 57,
+            "responseTime": 529,
+            "throughput": 5.1,
+            "errorRate": 0.34,
+            "activeUsers": 10
+          },
+          {
+            "time": 58,
+            "responseTime": 534,
+            "throughput": 5.1,
+            "errorRate": 0.34,
+            "activeUsers": 10
+          },
+          {
+            "time": 59,
+            "responseTime": 547,
+            "throughput": 5.1,
+            "errorRate": 0.33,
+            "activeUsers": 10
+          },
+          {
+            "time": 60,
+            "responseTime": 586,
+            "throughput": 5.1,
+            "errorRate": 0.33,
+            "activeUsers": 4
+          },
+          {
+            "time": 61,
+            "responseTime": 586,
+            "throughput": 5,
+            "errorRate": 0.33,
+            "activeUsers": 4
+          }
+        ],
+        "apiResults": [
+          {
+            "id": 101,
+            "method": "POST",
+            "endpoint": "/api/v1/auth/login",
+            "category": "Authentication",
+            "auth": "None",
+            "params": [
+              {
+                "name": "msisdn",
+                "type": "string"
+              },
+              {
+                "name": "password",
+                "type": "string"
+              }
+            ],
+            "description": "User login with phone/email",
+            "requests": 613,
+            "avgTime": 476,
+            "p95Time": 1004,
+            "errors": 2,
+            "status": "healthy",
+            "errorDetails": []
+          }
+        ],
+        "bottlenecks": [],
+        "errorBreakdown": [
+          {
+            "code": 429,
+            "name": "Too Many Requests",
+            "count": 0,
+            "description": "Rate limit exceeded",
+            "serverMessage": "Rate limit exceeded. Please retry after 60 seconds."
+          },
+          {
+            "code": 503,
+            "name": "Service Unavailable",
+            "count": 0,
+            "description": "Backend service unavailable",
+            "serverMessage": "The server is temporarily unable to handle the request."
+          },
+          {
+            "code": 504,
+            "name": "Gateway Timeout",
+            "count": 0,
+            "description": "Request timed out",
+            "serverMessage": "upstream request timeout"
+          },
+          {
+            "code": 500,
+            "name": "Internal Server Error",
+            "count": 0,
+            "description": "Server error",
+            "serverMessage": "Internal Server Error"
+          },
+          {
+            "code": 401,
+            "name": "Unauthorized",
+            "count": 0,
+            "description": "Authentication failed",
+            "serverMessage": "Invalid credentials or session expired."
+          }
+        ]
+      },
+      "clientId": "default",
+      "timestamp": "2026-01-30T15:53:23.518Z"
+    }
+  ]
+}
